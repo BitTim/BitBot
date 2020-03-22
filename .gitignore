@@ -103,5 +103,8 @@ dist
 # TernJS port file
 .tern-port
 
+# nohup
+nohup.out
+
 # Bot Token
 token.txt
