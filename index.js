@@ -36,19 +36,23 @@ bot.on("message", msg=> {
 		{
 			var embed = new Discord.MessageEmbed()
 			.setColor("#CE3142")
-			.setTitle("Top " + data[1] + " most used Words:")
+			.setTitle("🔥 Top " + data[1] + " most used Words: 🔥")
 			
-			for(var n = 0; n < data[1]; n += 10)
+			if(stat.length === 0) embed.addField("Nope", "❌ No words tracked yet")
+			else
 			{
-				var tmpStr = ""
-				for(var m = 0; m < 10; m++)
+				for(var n = 0; n < data[1]; n += 10)
 				{
-					if(n + m >= stat.length) break
-					tmpStr += (n + m + 1) + ". " + stat[n + m].word + " (" + stat[n + m].amount + "x)\n"
-				}
+					var tmpStr = ""
+					for(var m = 0; m < 10; m++)
+					{
+						if(n + m >= stat.length) break
+						tmpStr += (n + m + 1) + ". " + stat[n + m].word + " (" + stat[n + m].amount + "x)\n"
+					}
 
-				if(n >= stat.length) break
-				embed.addField("Places " + (n + 1) + " to " + (n + 10), tmpStr, true)
+					if(n >= stat.length) break
+					embed.addField("Places " + (n + 1) + " to " + (n + 10), tmpStr, true)
+				}
 			}
 
 			msg.channel.send(embed)
@@ -56,8 +60,8 @@ bot.on("message", msg=> {
 		break
 
 
-	case PREFIX + "info":
-		if(data[1] == "version") msg.channel.send("Version: " + VERSION);
+	case PREFIX + "version":
+		msg.channel.send("Version: " + VERSION);
 		break
 
 
@@ -75,6 +79,12 @@ bot.on("message", msg=> {
 		console.log("Changed prefix to: " + PREFIX)
 		break
 
+	case PREFIX + "help":
+		var embed = new Discord.MessageEmbed()
+		.setColor("#CE3142")
+		.setTitle("Help")
+		.addField("List of Commands:", "wordstat [num] - View the most used words. Num limits the amount of words and defaults to 10\nversion - Lists the version of the BitBot")
+		break
 
 	default:
 		if(msg.content.includes("Current Word Count Status:"))
