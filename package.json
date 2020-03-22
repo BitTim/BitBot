@@ -1,0 +1,22 @@
+{
+  "name": "bitbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bittim/BitBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bittim/BitBot/issues"
+  },
+  "homepage": "https://github.com/bittim/BitBot#readme",
+  "dependencies": {
+    "discord.js": "^12.0.2"
+  }
+}
