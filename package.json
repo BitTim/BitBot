@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/bittim/BitBot#readme",
   "dependencies": {
+    "discord": "^0.8.2",
     "discord.js": "^12.0.2"
   }
 }

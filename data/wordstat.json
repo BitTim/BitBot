@@ -1,26 +1,82 @@
 [
 	{
-		"word": ".voice",
+		"word": "creature",
+		"amount": 2
+	},
+	{
+		"word": "!wordstat",
 		"amount": 1
 	},
 	{
-		"word": "name",
+		"word": "for",
 		"amount": 1
 	},
 	{
-		"word": "roster",
+		"word": "usage",
 		"amount": 1
 	},
 	{
-		"word": "1",
+		"word": "look",
 		"amount": 1
 	},
 	{
-		"word": "is",
+		"word": "at",
 		"amount": 1
 	},
 	{
-		"word": "peng",
+		"word": "my",
+		"amount": 1
+	},
+	{
+		"word": "ping",
+		"amount": 1
+	},
+	{
+		"word": "you",
+		"amount": 1
+	},
+	{
+		"word": "fight",
+		"amount": 1
+	},
+	{
+		"word": "prefection",
+		"amount": 1
+	},
+	{
+		"word": "tries",
+		"amount": 1
+	},
+	{
+		"word": "ain't",
+		"amount": 1
+	},
+	{
+		"word": "good,",
+		"amount": 1
+	},
+	{
+		"word": "that's",
+		"amount": 1
+	},
+	{
+		"word": "an",
+		"amount": 1
+	},
+	{
+		"word": "easy",
+		"amount": 1
+	},
+	{
+		"word": "ready",
+		"amount": 1
+	},
+	{
+		"word": "ok",
+		"amount": 1
+	},
+	{
+		"word": "50",
 		"amount": 1
 	}
 ]

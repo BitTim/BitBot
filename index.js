@@ -1,3 +1,11 @@
+Object.defineProperty(Array.prototype, 'flat', {
+	value: function(depth = 1) {
+		return this.reduce(function (flat, toFlatten) {
+			return flat.concat((Array.isArray(toFlatten) && (depth>1)) ? toFlatten.flat(depth-1) : toFlatten);
+		}, []);
+	}
+});
+
 const fs = require("fs")
 const wordstat = require("./wordstat.js")
 const Discord = require("discord.js")
@@ -84,6 +92,7 @@ bot.on("message", msg=> {
 		.setColor("#CE3142")
 		.setTitle("Help")
 		.addField("List of Commands:", "wordstat [num] - View the most used words. Num limits the amount of words and defaults to 10\nversion - Lists the version of the BitBot")
+		msg.channel.send(embed);
 		break
 
 	default:
