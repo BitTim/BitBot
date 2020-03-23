@@ -1,12 +1,5 @@
-const fs = require("fs")
-const wordstat = require("./wordstat.js")
-const Discord = require("discord.js")
-const bot = new Discord.Client()
-
-console.log("Getting Token")
-const token = fs.readFileSync("data/token.txt", "utf8").split("\n")[0]
-
-const VERSION = "v1.0.2"
+const fs = require("fs");
+const Discord = require("discord.js");
 
 Object.defineProperty(Array.prototype, 'flat', {
 	value: function(depth = 1) {
@@ -16,84 +9,55 @@ Object.defineProperty(Array.prototype, 'flat', {
 	}
 });
 
+const PREFIX = "=";
+
+console.log("Getting Token");
+const token = fs.readFileSync("./token.txt", "utf8").split("\n")[0];
+
+console.log("Creating client");
+const bot = new Discord.Client();
+bot.commands = new Discord.Collection();
+
+console.log("Getting commands")
+const commandFiles = fs.readdirSync("./commands/").filter(file => file.endsWith(".js"));
+for(const file of commandFiles)
+{
+	const command = require(`./commands/${file}`);
+	console.log("-> Adding command " + command.name);
+	bot.commands.set(command.name, command);
+}
+console.log("Creation complete")
+
 bot.on("ready", () => {
-	console.log("Bot started")
+	console.log("Bot started");
 })
 
-bot.on("message", msg=> {
+bot.on("message", (msg) => {
 	if(msg.author.bot) return;
-	console.log("Received: " + msg.content)
-	let data = msg.content.split(" ")
+	console.log("Received: " + msg.content);
+	let data = msg.content.split(" ");
 
-	switch(data[0])
+	if(data[0].substr(0, 1) === PREFIX)
 	{
-	case PREFIX + "wordstat":
-		if(!data[1]) data[1] = 10
-		if(data[1] > 250) data[1] = 250
-		let stat = wordstat.getStat(data[1])
-		if(stat == "[]") msg.channel.send("No words tracked yet")
+		data[0] = data[0].substr(1);
+		if(bot.commands.get(data[0]) != undefined)
+		{
+			console.log("Found command " + data[0]);
+			bot.commands.get(data[0]).exec(msg, data)
+		}
 		else
 		{
-			var embed = new Discord.MessageEmbed()
+			const embed = new Discord.MessageEmbed()
 			.setColor("#CE3142")
-			.setTitle("🔥 Top " + data[1] + " most used Words: 🔥")
-			
-			if(stat.length === 0) embed.addField("Nope", "❌ No words tracked yet")
-			else
-			{
-				for(var n = 0; n < data[1]; n += 10)
-				{
-					var tmpStr = ""
-					for(var m = 0; m < 10; m++)
-					{
-						if(n + m >= stat.length) break
-						tmpStr += (n + m + 1) + ". " + stat[n + m].word + " (" + stat[n + m].amount + "x)\n"
-					}
-
-					if(n >= stat.length) break
-					embed.addField("Places " + (n + 1) + " to " + (n + 10), tmpStr, true)
-				}
-			}
-
-			msg.channel.send(embed)
+			.setTitle("❌ Command \"" + data[0] + "\" is not valid");
+			msg.channel.send(embed);
 		}
-		break
-
-
-	case PREFIX + "version":
-		msg.channel.send("Version: " + VERSION);
-		break
-
-
-	case PREFIX + "changePrefix":
-		if(!data[1])
-		{
-			msg.reply("Please specify a new Prefix")
-			break
-		}
-
-		PREFIX = data[1];
-		msg.reply("Changed prefix to: " + PREFIX)
-		
-		fs.writeFile("data/prefix.txt", PREFIX, (err) => {if (err) throw err})
-		console.log("Changed prefix to: " + PREFIX)
-		break
-
-	case PREFIX + "help":
-		var embed = new Discord.MessageEmbed()
-		.setColor("#CE3142")
-		.setTitle("Help")
-		.addField("List of Commands:", "wordstat [num] - View the most used words. Num limits the amount of words and defaults to 10\nversion - Lists the version of the BitBot")
-		msg.channel.send(embed);
-		break
-
-	default:
-		if(msg.content.includes("Current Word Count Status:"))
-		console.log("Beginning to track: " + msg.content)
-		wordstat.update(msg.content)
-		break
+	}
+	else
+	{
+		bot.commands.get("wordstat").update(msg)
 	}
 })
 
-console.log("Logging in")
-bot.login(token)
+console.log("Logging in");
+bot.login(token);
