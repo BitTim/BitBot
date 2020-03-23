@@ -1,11 +1,3 @@
-Object.defineProperty(Array.prototype, 'flat', {
-	value: function(depth = 1) {
-		return this.reduce(function (flat, toFlatten) {
-			return flat.concat((Array.isArray(toFlatten) && (depth>1)) ? toFlatten.flat(depth-1) : toFlatten);
-		}, []);
-	}
-});
-
 const fs = require("fs")
 const wordstat = require("./wordstat.js")
 const Discord = require("discord.js")
@@ -14,9 +6,15 @@ const bot = new Discord.Client()
 console.log("Getting Token")
 const token = fs.readFileSync("data/token.txt", "utf8").split("\n")[0]
 
-var PREFIX = fs.readFileSync("data/prefix.txt", "utf8").split("\n")[0]
 const VERSION = "v1.0.2"
-const replies = ["No.", "I don't want to", "Do I really have to say that?", "Nope", "I hate you"]
+
+Object.defineProperty(Array.prototype, 'flat', {
+	value: function(depth = 1) {
+		return this.reduce(function (flat, toFlatten) {
+			return flat.concat((Array.isArray(toFlatten) && (depth>1)) ? toFlatten.flat(depth-1) : toFlatten);
+		}, []);
+	}
+});
 
 bot.on("ready", () => {
 	console.log("Bot started")
@@ -29,12 +27,6 @@ bot.on("message", msg=> {
 
 	switch(data[0])
 	{
-	case PREFIX + "say":
-		let i = Math.floor(Math.random() * Math.floor(replies.length))
-		msg.channel.send(replies[i])
-		break
-
-
 	case PREFIX + "wordstat":
 		if(!data[1]) data[1] = 10
 		if(data[1] > 250) data[1] = 250
