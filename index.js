@@ -55,7 +55,8 @@ bot.on("message", (msg) => {
 	}
 	else
 	{
-		bot.commands.get("wordstat").update(msg)
+		if(msg.content.toLowerCase().includes("uh oh")) msg.channel.send("BLACK PEOPLE");
+		bot.commands.get("wordstat").update(msg);
 	}
 })
 
