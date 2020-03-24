@@ -52,7 +52,6 @@ module.exports = {
           {
            if(backStat[j].word == currStat[i].word)
             {
-             backStat[j].amount += currStat[i].amount;
               currStat[i].amount = -1234;
             }
           }

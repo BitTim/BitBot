@@ -1,6 +1,10 @@
 const fs = require("fs");
 const Discord = require("discord.js");
 
+//================================
+// INIT
+//================================
+
 Object.defineProperty(Array.prototype, 'flat', {
 	value: function(depth = 1) {
 		return this.reduce(function (flat, toFlatten) {
@@ -28,9 +32,17 @@ for(const file of commandFiles)
 }
 console.log("Creation complete")
 
+//================================
+// READY
+//================================
+
 bot.on("ready", () => {
 	console.log("Bot started");
 })
+
+//================================
+// UPDATE
+//================================
 
 bot.on("message", (msg) => {
 	if(msg.author.bot) return;
@@ -45,17 +57,29 @@ bot.on("message", (msg) => {
 			console.log("Found command " + data[0]);
 			bot.commands.get(data[0]).exec(msg, data)
 		}
-		else
+		else if(data[0] != "")
 		{
-			const embed = new Discord.MessageEmbed()
-			.setColor("#CE3142")
-			.setTitle("❌ Command \"" + data[0] + "\" is not valid");
-			msg.channel.send(embed);
+			msg.channel.send("❌ Command \"" + data[0] + "\" is not valid");
 		}
 	}
 	else
 	{
-		if(msg.content.toLowerCase().includes("uh oh")) msg.channel.send("BLACK PEOPLE");
+		if(msg.content.toLowerCase().includes("uh oh"))
+		{
+			msg.channel.send("BLACK PEOPLE");
+
+			if(msg.member.voice.channel)
+			{
+				msg.member.voice.channel.join().then(connection =>
+				{
+					const dispatcher = connection.play('./data/black people.mp3');
+					dispatcher.on("finish", end => {
+						msg.member.voice.channel.leave();
+					});
+				}).catch(err => console.log(err));
+			}
+		}
+
 		bot.commands.get("wordstat").update(msg);
 	}
 })
