@@ -73,6 +73,7 @@ bot.on("message", (msg) => {
 				msg.member.voice.channel.join().then(connection =>
 				{
 					const dispatcher = connection.play('./data/black people.mp3');
+					dispatcher.setVolume(0.5);
 					dispatcher.on("finish", end => {
 						msg.member.voice.channel.leave();
 					});
