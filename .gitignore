@@ -105,8 +105,8 @@ dist
 
 # nohup
 nohup.out
-wordstat.js
-users.js
+backup/wordstat.js
+data/users.js
 
 # Bot Token
 token.txt
