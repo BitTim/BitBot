@@ -13,7 +13,7 @@ Object.defineProperty(Array.prototype, 'flat', {
 	}
 });
 
-const PREFIX = "-";
+const PREFIX = "=";
 
 console.log("Getting Token");
 const token = fs.readFileSync("./token.txt", "utf8").split("\n")[0];

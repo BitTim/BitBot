@@ -115,6 +115,7 @@ module.exports = {
       else
       {
         db.find(user => user.id === msg.author.id).trolls.push(outcome.name);
+    	fs.writeFile("./data/users.json", JSON.stringify(db, null, "\t"), (err) => { if(err) throw err; });
       }
       msg.channel.send(embed);
     }
