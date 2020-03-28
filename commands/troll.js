@@ -31,17 +31,25 @@ module.exports = {
     else if(args[1] === "list")
     {
       embed.setTitle("😂 Troll meme list");
-      
+
       for(var category of memes)
       {
         var embedString = "";
         for(var item of category.items)
         {
+          if(db.find(user => user.id === msg.author.id).trolls.includes(item.name))
+          {
+            embedString += "✅ ";
+          }
+          else embedString += "❌ ";
+
           embedString += item.name + "\n";
         }
 
         embed.addField(category.name, embedString, true);
       }
+
+      embed.addField("Notes", "Indicators show which ones " + msg.author.username + " owns");
 
       msg.channel.send(embed);
       return;
