@@ -107,7 +107,7 @@ module.exports = {
             clearInterval(interval);
 
             pos = pos.sort();
-            if(pos[0] === pos[1] === pos[2])
+            if(pos[0] === pos[1] && pos[1] === pos[2])
             {
               bet = Math.floor(bet * 10);
               embed.addField("Payout", "Spin: " + bet + " Bits\n");
