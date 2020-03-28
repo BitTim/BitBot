@@ -1,22 +1,30 @@
 [
 	{
 		"word": "!p",
-		"amount": 17
+		"amount": 20
 	},
 	{
 		"word": "!skip",
 		"amount": 12
 	},
 	{
+		"word": "a",
+		"amount": 11
+	},
+	{
 		"word": "!s",
 		"amount": 11
 	},
 	{
-		"word": "a",
-		"amount": 10
+		"word": "i",
+		"amount": 7
 	},
 	{
-		"word": "i",
+		"word": "be",
+		"amount": 6
+	},
+	{
+		"word": "is",
 		"amount": 6
 	},
 	{
@@ -24,23 +32,35 @@
 		"amount": 5
 	},
 	{
-		"word": "be",
-		"amount": 5
-	},
-	{
-		"word": "is",
-		"amount": 5
-	},
-	{
 		"word": "https://www.youtube.com/playlist?list=PLxP-GTvcJvsxZdXq_ra7ckUFTDuS4-ckj",
-		"amount": 4
+		"amount": 5
+	},
+	{
+		"word": "",
+		"amount": 5
 	},
 	{
 		"word": "it",
 		"amount": 4
 	},
 	{
+		"word": "for",
+		"amount": 4
+	},
+	{
+		"word": "bump",
+		"amount": 4
+	},
+	{
+		"word": "!d",
+		"amount": 4
+	},
+	{
 		"word": "you",
+		"amount": 4
+	},
+	{
+		"word": "lol",
 		"amount": 3
 	},
 	{
@@ -48,55 +68,39 @@
 		"amount": 3
 	},
 	{
-		"word": "today",
-		"amount": 3
-	},
-	{
-		"word": "lol",
-		"amount": 3
-	},
-	{
 		"word": "at",
 		"amount": 3
 	},
 	{
-		"word": "for",
+		"word": "@everyone",
 		"amount": 3
 	},
 	{
-		"word": "",
+		"word": "hosting",
 		"amount": 3
 	},
 	{
-		"word": "Led",
-		"amount": 2
+		"word": "today",
+		"amount": 3
 	},
 	{
-		"word": "Peace",
-		"amount": 2
-	},
-	{
-		"word": "meme",
-		"amount": 2
-	},
-	{
-		"word": "scrooger",
-		"amount": 2
-	},
-	{
-		"word": "leviathan",
-		"amount": 2
-	},
-	{
-		"word": "behemoth",
-		"amount": 2
+		"word": "!shuffle",
+		"amount": 3
 	},
 	{
 		"word": "me",
-		"amount": 2
+		"amount": 3
 	},
 	{
-		"word": "quiet",
+		"word": "play",
+		"amount": 3
+	},
+	{
+		"word": "meme",
+		"amount": 3
+	},
+	{
+		"word": "@here",
 		"amount": 2
 	},
 	{
@@ -104,7 +108,7 @@
 		"amount": 2
 	},
 	{
-		"word": "play",
+		"word": "with",
 		"amount": 2
 	},
 	{
@@ -112,19 +116,19 @@
 		"amount": 2
 	},
 	{
-		"word": "!shuffle",
+		"word": "Led",
 		"amount": 2
 	},
 	{
-		"word": "!d",
+		"word": "fuck",
 		"amount": 2
 	},
 	{
-		"word": "bump",
+		"word": "cool",
 		"amount": 2
 	},
 	{
-		"word": "@here@everyone",
+		"word": "behemoth",
 		"amount": 2
 	},
 	{
@@ -132,7 +136,15 @@
 		"amount": 2
 	},
 	{
-		"word": "hosting",
+		"word": "to",
+		"amount": 2
+	},
+	{
+		"word": "here",
+		"amount": 2
+	},
+	{
+		"word": "quiet",
 		"amount": 2
 	},
 	{
@@ -144,7 +156,15 @@
 		"amount": 2
 	},
 	{
-		"word": "@everyone",
+		"word": "@here@everyone",
+		"amount": 2
+	},
+	{
+		"word": "scrooger",
+		"amount": 2
+	},
+	{
+		"word": "Peace",
 		"amount": 2
 	},
 	{
@@ -152,31 +172,11 @@
 		"amount": 2
 	},
 	{
-		"word": "cool",
+		"word": "leviathan",
 		"amount": 2
-	},
-	{
-		"word": "fuck",
-		"amount": 2
-	},
-	{
-		"word": "someone",
-		"amount": 1
-	},
-	{
-		"word": "game#",
-		"amount": 1
-	},
-	{
-		"word": "_troll",
-		"amount": 1
 	},
 	{
 		"word": "lmao",
-		"amount": 1
-	},
-	{
-		"word": "probe",
 		"amount": 1
 	},
 	{
@@ -364,7 +364,7 @@
 		"amount": 1
 	},
 	{
-		"word": "scroober",
+		"word": "Why",
 		"amount": 1
 	},
 	{
@@ -376,11 +376,11 @@
 		"amount": 1
 	},
 	{
-		"word": "bugbootar",
+		"word": "_troll",
 		"amount": 1
 	},
 	{
-		"word": "pathetic",
+		"word": "OK",
 		"amount": 1
 	},
 	{
@@ -460,7 +460,7 @@
 		"amount": 1
 	},
 	{
-		"word": "clidus",
+		"word": "probe",
 		"amount": 1
 	},
 	{
@@ -524,7 +524,7 @@
 		"amount": 1
 	},
 	{
-		"word": "with",
+		"word": "someone",
 		"amount": 1
 	},
 	{
@@ -724,7 +724,51 @@
 		"amount": 1
 	},
 	{
-		"word": "@here",
+		"word": "game#",
+		"amount": 1
+	},
+	{
+		"word": "scroober",
+		"amount": 1
+	},
+	{
+		"word": "!Play",
+		"amount": 1
+	},
+	{
+		"word": "who",
+		"amount": 1
+	},
+	{
+		"word": "clidus",
+		"amount": 1
+	},
+	{
+		"word": "wants",
+		"amount": 1
+	},
+	{
+		"word": "bugbootar",
+		"amount": 1
+	},
+	{
+		"word": "no",
+		"amount": 1
+	},
+	{
+		"word": "pathetic",
+		"amount": 1
+	},
+	{
+		"word": "can",
+		"amount": 1
+	},
+	{
+		"word": "uh",
+		"amount": 1
+	},
+	{
+		"word": "oh",
 		"amount": 1
 	}
 ]
