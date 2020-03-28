@@ -4,15 +4,22 @@ const opus = require('node-opus');
 const Discord = require("discord.js")
 
 var memes = JSON.parse(fs.readFileSync("./data/memes.json", "utf8"));
+var db = JSON.parse(fs.readFileSync("data/users.json", "utf8"));
 
 module.exports = {
   name: "troll",
   description: "Trolling with memes meme",
   exec(msg, args)
   {
+    db = JSON.parse(fs.readFileSync("data/users.json", "utf8"));
+    
+    var embed = new Discord.MessageEmbed()
+    .setColor("#CE3142")
+
     if(args < 2)
     {
-      msg.channel.send("❌ You have to specify a meme");
+      embed.setTitle("❌ You have to specify a meme");
+      msg.channel.send(embed)
       return;
     }
 
@@ -23,30 +30,51 @@ module.exports = {
     }
     else if(args[1] === "list")
     {
-      var embed = new Discord.MessageEmbed()
-      .setColor("#CE3142")
-      .setTitle("😂 Troll meme list");
+      embed.setTitle("😂 Troll meme list");
       
-      var embedString = "";
-      for(var meme of memes)
+      for(var category of memes)
       {
-        embedString += "\n" + meme.name;
+        var embedString = "";
+        for(var item of category.items)
+        {
+          embedString += item.name + "\n";
+        }
+
+        embed.addField(category.name, embedString, true);
       }
 
-      embedString = embedString.substr(0, embedString.length);
-      embed.addField("Memes", embedString);
       msg.channel.send(embed);
       return;
     }
     else if(args[1] === "rand")
     {
-      args[1] = memes[Math.floor(Math.random() * Math.floor(memes.length))].name;
-      msg.channel.send("🎲 Your Meme: \"" + args[1] + "\"");
+      args[1] = db.find(user => user.id === msg.author.id).trolls[Math.floor(Math.random() * Math.floor(db.find(user => user.id === msg.author.id).trolls.length))];
+      embed.setTitle("🎲 Your Meme: \"" + args[1] + "\"");
+      msg.channel.send(embed);
     }
 
-    if(!memes.find(meme => meme.name == args[1]))
+    var memeFound = false;
+    var meme;
+    for(var category of memes)
     {
-      msg.channel.send("❌ Meme not found");
+      if(meme = category.items.find(meme => meme.name == args[1]))
+      {
+        memeFound = true;
+        break;
+      }
+    }
+
+    if(!memeFound)
+    {
+      embed.setTitle("❌ Meme not found");
+      msg.channel.send(embed);
+      return;
+    }
+
+    if(!db.find(user => user.id === msg.author.id).trolls.includes(args[1]))
+    {
+      embed.setTitle("❌ You don't have " + args[1] + " unlocked yet");
+      msg.channel.send(embed);
       return;
     }
 
@@ -58,8 +86,8 @@ module.exports = {
     {
       voiceChannel.join().then(connection =>
       {
-        const dispatcher = connection.play(ytdl(memes.find(meme => meme.name == args[1]).url, { filter: 'audioonly' }));
-        dispatcher.setVolume(0.25);
+        const dispatcher = connection.play(ytdl(meme.url, { filter: 'audioonly' }));
+        dispatcher.setVolume(0.5);
         dispatcher.on("finish", end => {
           voiceChannel.leave();
         });
@@ -67,7 +95,8 @@ module.exports = {
     }
     else
     {
-      msg.channel.send("❌ " + user.toString() + " has to be in Voice Channel")
+      embed.setTitle("❌ " + user.user.username + " has to be in Voice Channel")
+      msg.channel.send(embed);
     }
   }
 }

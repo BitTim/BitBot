@@ -1,7 +1,7 @@
 const fs = require("fs")
 const Discord = require("discord.js");
 
-var currStat = []
+var currStat = JSON.parse(fs.readFileSync("./backup/wordstat.json", "utf8", (err) => { if(err) throw err; }));
 const bitTimID = "398134358575153154";
 
 module.exports = {
@@ -16,56 +16,7 @@ module.exports = {
     var embed = new Discord.MessageEmbed()
     .setColor("#CE3142");
 
-    if(args[1] === "save")
-    {
-      if(msg.author.id === bitTimID)
-      {
-        var backStat = JSON.parse(fs.readFileSync("./backup/wordstat.json", "utf8", (err) => { if(err) throw err; }));
-        for(var i = 0; i < backStat.length; i++)
-        {
-          for(var j = 0; j < currStat.length; j++)
-          {
-            if(currStat[j].word == backStat[i].word)
-            {
-              backStat[i].amount = -1234;
-            }
-          }
-        }
-        backStat = backStat.filter(stat => stat.amount != -1234);
-
-        backStat = backStat.concat(currStat);
-        backStat.sort((a, b) => b.amount - a.amount);
-
-        fs.writeFile("./backup/wordstat.json", JSON.stringify(backStat, null, "\t"), (err) => { if(err) throw err; });
-        embed.setTitle("✔ Backed up Wordstat");
-      }
-      else embed.setTitle("❌ Insufficient Permission");
-    }
-    else if(args[1] == "load")
-    {
-      if(msg.author.id === bitTimID)
-      {
-        var backStat = JSON.parse(fs.readFileSync("./backup/wordstat.json", "utf8", (err) => { if(err) throw err; }));
-        for(var i = 0; i < currStat.length; i++)
-        {
-          for(var j = 0; j < backStat.length; j++)
-          {
-           if(backStat[j].word == currStat[i].word)
-            {
-              currStat[i].amount = -1234;
-            }
-          }
-        }
-        currStat = currStat.filter(stat => stat.amount != -1234);
-
-        currStat = currStat.concat(backStat);
-        currStat.sort((a, b) => b.amount - a.amount);
-
-        embed.setTitle("✔ Loaded Backup of Wordstat");
-      }
-      else embed.setTitle("❌ Insufficient Permission");
-    }
-    else if(args[1] == "clear")
+    if(args[1] == "clear")
     {
       if(msg.author.id === bitTimID)
       {
@@ -119,5 +70,6 @@ module.exports = {
     }
 
     currStat.sort((a, b) => b.amount - a.amount);
+    fs.writeFile("./backup/wordstat.json", JSON.stringify(currStat, null, "\t"), (err) => { if(err) throw err; });
   }
 }

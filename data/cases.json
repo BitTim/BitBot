@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Test",
+    "outcomes": [
+      {
+        "name": "Bad",
+        "propability": 90
+      },
+      {
+        "name": "Good",
+        "propability": 10
+      }
+    ]
+  }
+]

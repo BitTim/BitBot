@@ -68,16 +68,19 @@ bot.on("message", (msg) => {
 		{
 			msg.channel.send("BLACK PEOPLE");
 
-			if(msg.member.voice.channel)
+			if(msg.member)
 			{
-				msg.member.voice.channel.join().then(connection =>
+				if(msg.member.voice.channel)
 				{
-					const dispatcher = connection.play('./data/black people.mp3');
-					dispatcher.setVolume(0.5);
-					dispatcher.on("finish", end => {
-						msg.member.voice.channel.leave();
-					});
-				}).catch(err => console.log(err));
+					msg.member.voice.channel.join().then(connection =>
+					{
+						const dispatcher = connection.play('./data/black people.mp3');
+						dispatcher.setVolume(0.5);
+						dispatcher.on("finish", end => {
+							msg.member.voice.channel.leave();
+						});
+					}).catch(err => console.log(err));
+				}
 			}
 		}
 
