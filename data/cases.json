@@ -1,14 +1,31 @@
 [
   {
-    "name": "Test",
+    "name": "germany",
+    "price": 7,
     "outcomes": [
       {
-        "name": "Bad",
-        "propability": 90
+        "name": "wow2",
+        "probability": 19
       },
       {
-        "name": "Good",
-        "propability": 10
+        "name": "jaaa",
+        "probability": 4
+      },
+      {
+        "name": "indertat",
+        "probability": 6
+      },
+      {
+        "name": "erdbeermarmelade",
+        "probability": 14
+      },
+      {
+        "name": "pcspielen",
+        "probability": 1
+      },
+      {
+        "name": "1---bit",
+        "probability": 60
       }
     ]
   }

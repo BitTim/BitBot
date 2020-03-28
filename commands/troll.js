@@ -4,14 +4,14 @@ const opus = require('node-opus');
 const Discord = require("discord.js")
 
 var memes = JSON.parse(fs.readFileSync("./data/memes.json", "utf8"));
-var db = JSON.parse(fs.readFileSync("data/users.json", "utf8"));
+var db = JSON.parse(fs.readFileSync("./data/users.json", "utf8"));
 
 module.exports = {
   name: "troll",
   description: "Trolling with memes meme",
   exec(msg, args)
   {
-    db = JSON.parse(fs.readFileSync("data/users.json", "utf8"));
+    db = JSON.parse(fs.readFileSync("./data/users.json", "utf8"));
     
     var embed = new Discord.MessageEmbed()
     .setColor("#CE3142")
@@ -21,6 +21,12 @@ module.exports = {
       embed.setTitle("❌ You have to specify a meme");
       msg.channel.send(embed)
       return;
+    }
+
+    if(!db.find(user => user.id === msg.author.id))
+    {
+      var user = {id: id, bits: 10, trolls: ["lmao"]}
+      db.push(user);
     }
 
     if(args[1] === "stop")
@@ -65,7 +71,7 @@ module.exports = {
     var meme;
     for(var category of memes)
     {
-      if(meme = category.items.find(meme => meme.name == args[1]))
+      if(meme = category.items.find(meme => meme.name === args[1]))
       {
         memeFound = true;
         break;

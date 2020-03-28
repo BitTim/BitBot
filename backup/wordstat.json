@@ -20,11 +20,11 @@
 		"amount": 7
 	},
 	{
-		"word": "be",
-		"amount": 6
+		"word": "is",
+		"amount": 7
 	},
 	{
-		"word": "is",
+		"word": "be",
 		"amount": 6
 	},
 	{
@@ -57,6 +57,10 @@
 	},
 	{
 		"word": "you",
+		"amount": 4
+	},
+	{
+		"word": "=troll",
 		"amount": 4
 	},
 	{
@@ -177,7 +181,11 @@
 	},
 	{
 		"word": "lmao",
-		"amount": 1
+		"amount": 2
+	},
+	{
+		"word": "=bits",
+		"amount": 2
 	},
 	{
 		"word": "!D",
@@ -769,6 +777,58 @@
 	},
 	{
 		"word": "oh",
+		"amount": 1
+	},
+	{
+		"word": "_gamble",
+		"amount": 1
+	},
+	{
+		"word": "case",
+		"amount": 1
+	},
+	{
+		"word": "germany",
+		"amount": 1
+	},
+	{
+		"word": "hahaaa",
+		"amount": 1
+	},
+	{
+		"word": "oh..",
+		"amount": 1
+	},
+	{
+		"word": "das",
+		"amount": 1
+	},
+	{
+		"word": "schlecht",
+		"amount": 1
+	},
+	{
+		"word": ":)))",
+		"amount": 1
+	},
+	{
+		"word": "geht",
+		"amount": 1
+	},
+	{
+		"word": "wieder",
+		"amount": 1
+	},
+	{
+		"word": "=HELP",
+		"amount": 1
+	},
+	{
+		"word": "=help",
+		"amount": 1
+	},
+	{
+		"word": "noice",
 		"amount": 1
 	}
 ]

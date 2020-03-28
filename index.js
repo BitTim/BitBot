@@ -13,7 +13,7 @@ Object.defineProperty(Array.prototype, 'flat', {
 	}
 });
 
-const PREFIX = "=";
+const PREFIX = "-";
 
 console.log("Getting Token");
 const token = fs.readFileSync("./token.txt", "utf8").split("\n")[0];
@@ -59,7 +59,9 @@ bot.on("message", (msg) => {
 		}
 		else if(data[0] != "")
 		{
-			msg.channel.send("❌ Command \"" + data[0] + "\" is not valid");
+			const embed = new Discord.MessageEmbed().setColor("#CE3142")
+			embed.setTitle("❌ Command \"" + data[0] + "\" is not valid");
+			msg.channel.send(embed);
 		}
 	}
 	else
