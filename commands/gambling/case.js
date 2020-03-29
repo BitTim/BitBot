@@ -36,9 +36,13 @@ module.exports = {
       embed.setTitle("💼 List of cases");
       embed.addField("Case name", `
       germany
+      music
+      clip-1
       `, true);
       embed.addField("Case contents", `
       1 Bit, wow2, erdbeermarmelade, jaaa, indertat, pcspielen
+      3 Bits, bruhbruh, faces, nyan, sandstorm, mine
+      2 Bits, wow, omg, nice, nonono, nani
       `, true);
       embed.addField("Notes", `
       If you open a case, you will only get one of the outcomes

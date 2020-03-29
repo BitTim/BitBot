@@ -28,5 +28,65 @@
         "probability": 60
       }
     ]
+  },
+  {
+    "name": "music",
+    "price": 15,
+    "outcomes": [
+      {
+        "name": "bruhbruh",
+        "probability": 11
+      },
+      {
+        "name": "nyan",
+        "probability": 8
+      },
+      {
+        "name": "faces",
+        "probability": 9
+      },
+      {
+        "name": "sandstorm",
+        "probability": 6
+      },
+      {
+        "name": "mine",
+        "probability": 2
+      },
+      {
+        "name": "3---bits",
+        "probability": 64
+      }
+    ]
+  },
+  {
+    "name": "clip-1",
+    "price": 5,
+    "outcomes": [
+      {
+        "name": "wow",
+        "probability": 19
+      },
+      {
+        "name": "nonono",
+        "probability": 6
+      },
+      {
+        "name": "nice",
+        "probability": 10
+      },
+      {
+        "name": "omg",
+        "probability": 14
+      },
+      {
+        "name": "nani",
+        "probability": 1
+      },
+      {
+        "name": "2---bits",
+        "probability": 50
+      }
+    ]
   }
 ]
