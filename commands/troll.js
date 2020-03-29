@@ -4,14 +4,14 @@ const opus = require('node-opus');
 const Discord = require("discord.js")
 
 var memes = JSON.parse(fs.readFileSync("./data/memes.json", "utf8"));
-var db = JSON.parse(fs.readFileSync("data/users.json", "utf8"));
+var db = JSON.parse(fs.readFileSync("./data/users.json", "utf8"));
 
 module.exports = {
   name: "troll",
   description: "Trolling with memes meme",
   exec(msg, args)
   {
-    db = JSON.parse(fs.readFileSync("data/users.json", "utf8"));
+    db = JSON.parse(fs.readFileSync("./data/users.json", "utf8"));
     
     var embed = new Discord.MessageEmbed()
     .setColor("#CE3142")
@@ -23,6 +23,12 @@ module.exports = {
       return;
     }
 
+    if(!db.find(user => user.id === msg.author.id))
+    {
+      var user = {id: id, bits: 10, trolls: ["lmao"]}
+      db.push(user);
+    }
+
     if(args[1] === "stop")
     {
       if(msg.member.voice.channel) msg.member.voice.channel.leave();
@@ -31,17 +37,25 @@ module.exports = {
     else if(args[1] === "list")
     {
       embed.setTitle("😂 Troll meme list");
-      
+
       for(var category of memes)
       {
         var embedString = "";
         for(var item of category.items)
         {
+          if(db.find(user => user.id === msg.author.id).trolls.includes(item.name))
+          {
+            embedString += "✅ ";
+          }
+          else embedString += "❌ ";
+
           embedString += item.name + "\n";
         }
 
         embed.addField(category.name, embedString, true);
       }
+
+      embed.addField("Notes", "Indicators show which ones " + msg.author.username + " owns");
 
       msg.channel.send(embed);
       return;
@@ -57,7 +71,7 @@ module.exports = {
     var meme;
     for(var category of memes)
     {
-      if(meme = category.items.find(meme => meme.name == args[1]))
+      if(meme = category.items.find(meme => meme.name === args[1]))
       {
         memeFound = true;
         break;

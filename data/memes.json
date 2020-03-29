@@ -3,63 +3,63 @@
     "name": "German",
     "items": [
       {"name": "egal", "price": 20, "url": "https://www.youtube.com/watch?v=Vu7bzI2Hms0"},
-      {"name": "nein", "price": 20, "url": "https://www.youtube.com/watch?v=C6BrnQ6LE4g"},
-      {"name": "indertat", "price": 20, "url": "https://www.youtube.com/watch?v=u_KQsnF5ofU"},
+      {"name": "nein", "price": 10, "url": "https://www.youtube.com/watch?v=C6BrnQ6LE4g"},
+      {"name": "indertat", "price": 10, "url": "https://www.youtube.com/watch?v=u_KQsnF5ofU"},
       {"name": "jaaa", "price": 20, "url": "https://www.youtube.com/watch?v=7XXPbmHSWQQ"},
-      {"name": "erika", "price": 20, "url": "https://www.youtube.com/watch?v=Cz0TkVb0LsQ"},
-      {"name": "pcspielen", "price": 20, "url": "https://www.youtube.com/watch?v=Cy4mztkndHk"},
-      {"name": "wow2", "price": 20, "url": "https://www.youtube.com/watch?v=twqmITFCOJU"},
-      {"name": "erdbeermarmelade", "price": 20, "url": "https://www.youtube.com/watch?v=gQDSlDmFcJQ"}
+      {"name": "erika", "price": 35, "url": "https://www.youtube.com/watch?v=Cz0TkVb0LsQ"},
+      {"name": "pcspielen", "price": 50, "url": "https://www.youtube.com/watch?v=Cy4mztkndHk"},
+      {"name": "wow2", "price": 5, "url": "https://www.youtube.com/watch?v=twqmITFCOJU"},
+      {"name": "erdbeermarmelade", "price": 15, "url": "https://www.youtube.com/watch?v=gQDSlDmFcJQ"}
     ]
   },
   {
     "name": "Music",
     "items": [
-      {"name": "rickroll", "price": 20, "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"},
-      {"name": "90s", "price": 20, "url": "https://www.youtube.com/watch?v=BJ0xBCwkg3E"},
-      {"name": "sandstorm", "price": 20, "url": "https://www.youtube.com/watch?v=y6120QOlsfU"},
-      {"name": "kahoot", "price": 20, "url": "https://www.youtube.com/watch?v=0q5vYr-SWlY"},
-      {"name": "mine", "price": 20, "url": "https://www.youtube.com/watch?v=dgha9S39Y6M"},
-      {"name": "revenge", "price": 20, "url": "https://www.youtube.com/watch?v=cPJUBQd-PNM"},
+      {"name": "rickroll", "price": 75, "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"},
+      {"name": "90s", "price": 50, "url": "https://www.youtube.com/watch?v=BJ0xBCwkg3E"},
+      {"name": "sandstorm", "price": 50, "url": "https://www.youtube.com/watch?v=y6120QOlsfU"},
+      {"name": "kahoot", "price": 35, "url": "https://www.youtube.com/watch?v=0q5vYr-SWlY"},
+      {"name": "mine", "price": 60, "url": "https://www.youtube.com/watch?v=dgha9S39Y6M"},
+      {"name": "revenge", "price": 55, "url": "https://www.youtube.com/watch?v=cPJUBQd-PNM"},
       {"name": "bruhbruh", "price": 20, "url": "https://www.youtube.com/watch?v=Jgv7qhDLPhg"},
-      {"name": "faces", "price": 20, "url": "https://www.youtube.com/watch?v=4N3N1MlvVc4"},
-      {"name": "directed", "price": 20, "url": "https://www.youtube.com/watch?v=X-KwYX2u8e4"},
-      {"name": "nyan", "price": 20, "url": "https://www.youtube.com/watch?v=QH2-TGUlwu4"}
+      {"name": "faces", "price": 30, "url": "https://www.youtube.com/watch?v=4N3N1MlvVc4"},
+      {"name": "directed", "price": 25, "url": "https://www.youtube.com/watch?v=X-KwYX2u8e4"},
+      {"name": "nyan", "price": 15, "url": "https://www.youtube.com/watch?v=QH2-TGUlwu4"}
     ]
   },
   {
     "name": "Clip",
     "items": [
-      {"name": "bruh", "price": 20, "url": "https://www.youtube.com/watch?v=NzishIREebw"},
-      {"name": "oof", "price": 20, "url": "https://www.youtube.com/watch?v=HoBa2SyvtpE"},
-      {"name": "slowoof", "price": 20, "url": "https://www.youtube.com/watch?v=H66Tc0wLQZs"},
-      {"name": "yeet", "price": 20, "url": "https://www.youtube.com/watch?v=zM3gQ2ZFcUs"},
-      {"name": "nani", "price": 20, "url": "https://www.youtube.com/watch?v=sU0K4q3YRfw"},
+      {"name": "bruh", "price": 10, "url": "https://www.youtube.com/watch?v=NzishIREebw"},
+      {"name": "oof", "price": 5, "url": "https://www.youtube.com/watch?v=HoBa2SyvtpE"},
+      {"name": "slowoof", "price": 7, "url": "https://www.youtube.com/watch?v=H66Tc0wLQZs"},
+      {"name": "yeet", "price": 15, "url": "https://www.youtube.com/watch?v=zM3gQ2ZFcUs"},
+      {"name": "nani", "price": 25, "url": "https://www.youtube.com/watch?v=sU0K4q3YRfw"},
       {"name": "running", "price": 20, "url": "https://www.youtube.com/watch?v=W6oQUDFV2C0"},
-      {"name": "nope", "price": 20, "url": "https://www.youtube.com/watch?v=N9iyAeu7wac"},
-      {"name": "brb", "price": 20, "url": "https://www.youtube.com/watch?v=J85jV37CsYE"},
-      {"name": "tobecontinued", "price": 20, "url": "https://www.youtube.com/watch?v=403tAdvkSTA"},
-      {"name": "fuckedup", "price": 20, "url": "https://www.youtube.com/watch?v=8KsT6RgXF_I"},
-      {"name": "sike", "price": 20, "url": "https://www.youtube.com/watch?v=WMXmkZrOguU"},
+      {"name": "nope", "price": 10, "url": "https://www.youtube.com/watch?v=N9iyAeu7wac"},
+      {"name": "brb", "price": 15, "url": "https://www.youtube.com/watch?v=J85jV37CsYE"},
+      {"name": "tobecontinued", "price": 35, "url": "https://www.youtube.com/watch?v=403tAdvkSTA"},
+      {"name": "fuckedup", "price": 15, "url": "https://www.youtube.com/watch?v=8KsT6RgXF_I"},
+      {"name": "sike", "price": 25, "url": "https://www.youtube.com/watch?v=WMXmkZrOguU"},
       {"name": "lmao", "price": 0, "url": "https://www.youtube.com/watch?v=rh3uG5qAH94"},
       {"name": "omg", "price": 20, "url": "https://www.youtube.com/watch?v=B6LpzJLrhpw"},
-      {"name": "wow", "price": 20, "url": "https://www.youtube.com/watch?v=8URukvnUYTw"},
-      {"name": "thicc", "price": 20, "url": "https://www.youtube.com/watch?v=jwHrx-sBwyM"},
-      {"name": "fast", "price": 20, "url": "https://www.youtube.com/watch?v=9lVy36I6U_U"},
-      {"name": "jeff", "price": 20, "url": "https://www.youtube.com/watch?v=AfIOBLr1NDU"},
-      {"name": "nonono", "price": 20, "url": "https://www.youtube.com/watch?v=KyPbLqK1un4"},
-      {"name": "nice", "price": 20, "url": "https://www.youtube.com/watch?v=-mMhKYJFOnQ"},
-      {"name": "racist", "price": 20, "url": "https://www.youtube.com/watch?v=0yNIvxeuP34"}
+      {"name": "wow", "price": 10, "url": "https://www.youtube.com/watch?v=8URukvnUYTw"},
+      {"name": "thicc", "price": 30, "url": "https://www.youtube.com/watch?v=jwHrx-sBwyM"},
+      {"name": "fast", "price": 25, "url": "https://www.youtube.com/watch?v=9lVy36I6U_U"},
+      {"name": "jeff", "price": 0, "url": "https://www.youtube.com/watch?v=AfIOBLr1NDU"},
+      {"name": "nonono", "price": 40, "url": "https://www.youtube.com/watch?v=KyPbLqK1un4"},
+      {"name": "nice", "price": 15, "url": "https://www.youtube.com/watch?v=-mMhKYJFOnQ"},
+      {"name": "racist", "price": 7, "url": "https://www.youtube.com/watch?v=0yNIvxeuP34"}
     ]
   },
   {
     "name": "Troll",
     "items": [
-      {"name": "disconnect", "price": 20, "url": "https://www.youtube.com/watch?v=TRRR6nv48pk"},
-      {"name": "banned", "price": 20, "url": "https://www.youtube.com/watch?v=Fz07ingvIuc"},
-      {"name": "notify", "price": 20, "url": "https://www.youtube.com/watch?v=bsW3LulUknQ"},
-      {"name": "joinspam", "price": 20, "url": "https://www.youtube.com/watch?v=vrMCz9VcFhk"},
-      {"name": "door", "price": 20, "url": "https://www.youtube.com/watch?v=ZqNpXJwgO8o"}
+      {"name": "disconnect", "price": 15, "url": "https://www.youtube.com/watch?v=TRRR6nv48pk"},
+      {"name": "banned", "price": 25, "url": "https://www.youtube.com/watch?v=Fz07ingvIuc"},
+      {"name": "notify", "price": 40, "url": "https://www.youtube.com/watch?v=bsW3LulUknQ"},
+      {"name": "joinspam", "price": 60, "url": "https://www.youtube.com/watch?v=vrMCz9VcFhk"},
+      {"name": "door", "price": 100, "url": "https://www.youtube.com/watch?v=ZqNpXJwgO8o"}
     ]
   }
 ]

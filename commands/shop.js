@@ -2,14 +2,14 @@ const Discord = require("discord.js")
 const fs = require("fs")
 
 var memes = JSON.parse(fs.readFileSync("./data/memes.json", "utf8"));
-var db = JSON.parse(fs.readFileSync("data/users.json", "utf8"));
+var db = JSON.parse(fs.readFileSync("./data/users.json", "utf8"));
 
 module.exports = {
   name: "shop",
   description: "Shop for memes",
   exec(msg, args)
   {
-    db = JSON.parse(fs.readFileSync("data/users.json", "utf8"));
+    db = JSON.parse(fs.readFileSync("./data/users.json", "utf8"));
     
     if(args < 2)
     {

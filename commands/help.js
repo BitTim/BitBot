@@ -29,7 +29,7 @@ module.exports = {
 
     gamble list
     gamble loan
-    gamble slot
+    gamble <Game>
     gamble slot <Bet>
     gamble slot paytable
 
@@ -57,8 +57,8 @@ module.exports = {
 
     Lists all available gambling games
     Gives a loan of 5 Bits for gambling only
-    Playing slot machine with a bet of 1 Bit
-    Playing slot machine with a bet of <Bet> Bits
+    Playing <Game>
+    Playing "slot" with a bet of <Bet> Bits
     Displays the paytable for the slot machine
 
     Lists all purchasable items
