@@ -32,6 +32,7 @@ module.exports = {
     gamble <Game>
     gamble slot <Bet>
     gamble slot paytable
+    gamble case list
 
     shop list
     shop buy <Item>
@@ -60,6 +61,7 @@ module.exports = {
     Playing <Game>
     Playing "slot" with a bet of <Bet> Bits
     Displays the paytable for the slot machine
+    Lists all available Cases
 
     Lists all purchasable items
     Purchases a specified Item
