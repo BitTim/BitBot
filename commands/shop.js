@@ -17,6 +17,12 @@ module.exports = {
       return;
     }
 
+    if(!db.find(user => user.id === msg.author.id))
+    {
+      var user = {id: msg.author.id, bits: 10, trolls: ["lmao"]}
+      db.push(user);
+    }
+
     var embed = new Discord.MessageEmbed().setColor("#CE3142");
 
     if(args[1] === "list")

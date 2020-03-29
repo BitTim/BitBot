@@ -25,7 +25,7 @@ module.exports = {
 
     if(!db.find(user => user.id === msg.author.id))
     {
-      var user = {id: id, bits: 10, trolls: ["lmao"]}
+      var user = {id: msg.author.id, bits: 10, trolls: ["lmao"]}
       db.push(user);
     }
 
