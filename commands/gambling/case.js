@@ -145,8 +145,8 @@ module.exports = {
           }
 
           fs.writeFile("./data/users.json", JSON.stringify(db, null, "\t"), (err) => { if(err) throw err; });
-          doneOpen = true;
         }
+        doneOpen = true;
       })
     }, 1000);
   }
