@@ -113,7 +113,6 @@ module.exports = {
             embed.fields[0] = {name: "Outcome", value: "💰 You won " + amount + " Bits!", inline: true};
             embed.fields[2].value += "\n" + db.find(user => user.id === msg.author.id).bits + " Bits > " + (db.find(user => user.id === msg.author.id).bits + amount) + " Bits";
             db.find(user => user.id === msg.author.id).bits += amount;
-            sent.edit(embed)
           }
           else
           {
@@ -141,12 +140,12 @@ module.exports = {
             {
               db.find(user => user.id === msg.author.id).trolls.push(outcome.name);
             }
-            sent.edit(embed)
           }
 
+          sent.edit(embed);
           fs.writeFile("./data/users.json", JSON.stringify(db, null, "\t"), (err) => { if(err) throw err; });
+          doneOpen = true;
         }
-        doneOpen = true;
       })
     }, 1000);
   }
