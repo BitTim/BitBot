@@ -44,6 +44,11 @@ module.exports = {
       3 Bits, bruhbruh, faces, nyan, sandstorm, mine
       2 Bits, wow, omg, nice, nonono, nani
       `, true);
+      embed.addField("Price", `
+      7 Bits
+      15 Bits
+      5 Bits
+      `, true);
       embed.addField("Notes", `
       If you open a case, you will only get one of the outcomes
       Outcomes are sorted from common to rare
