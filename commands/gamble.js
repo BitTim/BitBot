@@ -34,7 +34,7 @@ module.exports = {
       db.push(user);
     }
     
-    if(games.get(args[1]) != undefined && args[1] != "case")
+    if(games.get(args[1]) != undefined)
 		{
 			console.log("Found command " + args[1]);
 			games.get(args[1]).exec(msg, args)

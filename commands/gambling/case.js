@@ -5,13 +5,24 @@ var memes = JSON.parse(fs.readFileSync("./data/memes.json", "utf8"));
 var cases = JSON.parse(fs.readFileSync("./data/cases.json", "utf8"));
 var db = JSON.parse(fs.readFileSync("./data/users.json", "utf8"));
 
+var doneOpen = true;
+
 module.exports = {
   name: "case",
   description: "A CS:GO like case opening game",
   async exec(msg, args)
   {
-    db = JSON.parse(fs.readFileSync("data/users.json", "utf8"));
+    db = JSON.parse(fs.readFileSync("./data/users.json", "utf8"));
     var embed = new Discord.MessageEmbed().setColor("#CE3142")
+
+    if(!doneOpen)
+    {
+      embed.setTitle("⏳ Please wait until the previous instance finished");
+      msg.channel.send(embed);
+      return;
+    }
+
+    doneOpen = false;
 
     if(!args[2])
     {
@@ -60,10 +71,11 @@ module.exports = {
     }
 
     db.find(user => user.id === msg.author.id).bits -= selCase.price;
-    embed.setTitle("➖ You have paid " + selCase.price + " Bits");
-    embed.addField("Change in balance", (db.find(user => user.id === msg.author.id).bits + selCase.price) + " Bits > " + db.find(user => user.id === msg.author.id).bits + " Bits")
-    msg.channel.send(embed);
-    embed.fields.splice(0, 1);
+    embed.setTitle("💼 Case Opening (" + msg.author.username + ")");
+    embed.addField("Outcome", "⚙ Opening", true)
+    embed.addField("Payment", "💳 You have paid " + selCase.price + " Bits", true)
+    embed.addField("Change in balance", (db.find(user => user.id === msg.author.id).bits + selCase.price) + " Bits > " + db.find(user => user.id === msg.author.id).bits + " Bits", true)
+    var sent = await msg.channel.send(embed);
 
     var rand = Math.floor(Math.random() * Math.floor(100));
     var outcome;
@@ -80,46 +92,58 @@ module.exports = {
       totalProb += selCase.outcomes[i].probability;
     }
 
-    if(outcome.name.includes("---bit"))
-    {
-      var amount = Number(outcome.name.split("-")[0])
-
-      embed.setTitle("💰 You won " + amount + " Bits!");
-      embed.addField("Change in balance", db.find(user => user.id === msg.author.id).bits + " Bits > " + (db.find(user => user.id === msg.author.id).bits + amount) + " Bits");
-      db.find(user => user.id === msg.author.id).bits += amount;
-      msg.channel.send(embed);
-    }
-    else
-    {
-      embed.setTitle("💎 You won \"" + outcome.name + "\"!");
-      if(db.find(user => user.id === msg.author.id).trolls.includes(outcome.name))
+    var counter = 0;
+    var interval = setInterval(() => {
+      embed.fields[0].value += ".";
+      
+      sent.edit(embed).then(() =>
       {
-        embed.addField("Notes", "You already own this item. You will get it's value in Bits instead");
-  
-        var itemFound = false;
-        var item;
-
-        for(var category of memes)
+        if(++counter >= 3)
         {
-          if(item = category.items.find(meme => meme.name === outcome.name))
+          clearInterval(interval);
+
+          if(outcome.name.includes("---bit"))
           {
-            itemFound = true;
-            break;
+            var amount = Number(outcome.name.split("-")[0])
+
+            embed.fields[0] = {name: "Outcome", value: "💰 You won " + amount + " Bits!", inline: true};
+            embed.fields[2].value += "\n" + db.find(user => user.id === msg.author.id).bits + " Bits > " + (db.find(user => user.id === msg.author.id).bits + amount) + " Bits";
+            db.find(user => user.id === msg.author.id).bits += amount;
+            sent.edit(embed)
           }
-          if(itemFound) break;
+          else
+          {
+            embed.fields[0] = {name: "Outcome", value: "💎 You won \"" + outcome.name + "\"!", inline: true};
+            if(db.find(user => user.id === msg.author.id).trolls.includes(outcome.name))
+            {            
+              var itemFound = false;
+              var item;
+
+              for(var category of memes)
+              {
+                if(item = category.items.find(meme => meme.name === outcome.name))
+                {
+                  itemFound = true;
+                  break;
+                }
+                if(itemFound) break;
+              }
+
+              embed.addField("Notes", "You already own this item. You will get it's value (" + item.price + ") in Bits instead");
+              embed.fields[2].value += "\n" + db.find(user => user.id === msg.author.id).bits + " Bits > " + (db.find(user => user.id === msg.author.id).bits + item.price) + " Bits";
+              db.find(user => user.id === msg.author.id).bits += item.price;
+            }
+            else
+            {
+              db.find(user => user.id === msg.author.id).trolls.push(outcome.name);
+            }
+            sent.edit(embed)
+          }
+
+          fs.writeFile("./data/users.json", JSON.stringify(db, null, "\t"), (err) => { if(err) throw err; });
+          doneOpen = true;
         }
-
-        embed.addField("Change in balance", db.find(user => user.id === msg.author.id).bits + " Bits > " + (db.find(user => user.id === msg.author.id).bits + item.price) + " Bits");
-        db.find(user => user.id === msg.author.id).bits += item.price;
-      }
-      else
-      {
-        db.find(user => user.id === msg.author.id).trolls.push(outcome.name);
-    	fs.writeFile("./data/users.json", JSON.stringify(db, null, "\t"), (err) => { if(err) throw err; });
-      }
-      msg.channel.send(embed);
-    }
-
-    fs.writeFile("./data/users.json", JSON.stringify(db, null, "\t"), (err) => { if(err) throw err; });
+      })
+    }, 1000);
   }
 }

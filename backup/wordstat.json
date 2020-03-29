@@ -164,6 +164,10 @@
 		"amount": 5
 	},
 	{
+		"word": "in",
+		"amount": 5
+	},
+	{
 		"word": "gambling",
 		"amount": 4
 	},
@@ -193,10 +197,6 @@
 	},
 	{
 		"word": "FUCKING",
-		"amount": 4
-	},
-	{
-		"word": "in",
 		"amount": 4
 	},
 	{
@@ -316,6 +316,10 @@
 		"amount": 3
 	},
 	{
+		"word": "this",
+		"amount": 3
+	},
+	{
 		"word": "<#686951473279533128>",
 		"amount": 2
 	},
@@ -401,10 +405,6 @@
 	},
 	{
 		"word": "quiet",
-		"amount": 2
-	},
-	{
-		"word": "this",
 		"amount": 2
 	},
 	{
@@ -517,6 +517,10 @@
 	},
 	{
 		"word": "here",
+		"amount": 2
+	},
+	{
+		"word": "You",
 		"amount": 2
 	},
 	{
@@ -1312,10 +1316,6 @@
 		"amount": 1
 	},
 	{
-		"word": "You",
-		"amount": 1
-	},
-	{
 		"word": "go",
 		"amount": 1
 	},
@@ -1689,6 +1689,34 @@
 	},
 	{
 		"word": "gamvle",
+		"amount": 1
+	},
+	{
+		"word": "ßgamble",
+		"amount": 1
+	},
+	{
+		"word": "slots",
+		"amount": 1
+	},
+	{
+		"word": "=bits",
+		"amount": 1
+	},
+	{
+		"word": "embed.addField(\"Notes\",",
+		"amount": 1
+	},
+	{
+		"word": "\"You",
+		"amount": 1
+	},
+	{
+		"word": "already",
+		"amount": 1
+	},
+	{
+		"word": "own",
 		"amount": 1
 	}
 ]
