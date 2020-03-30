@@ -95,7 +95,7 @@ module.exports = {
       if(counter === 2) embed.fields[0] = {name: "Reel", value: reelSymbols[pos_bef[0]] + reelSymbols[pos_bef[1]] + reelSymbols[pos_bef[2]] + "\n" + reelSymbols[pos[0]] + reelSymbols[pos[1]] + reelSymbols[pos[2]] + "< \n" + reelSymbols[pos_aft[0]] + reelSymbols[pos_aft[1]] + reelSymbols[pos_aft[2]] + "\n", inline: true};
 
       spin.edit(embed).then(() => {
-        if(++counter >= 2)
+        if(++counter >= 3)
         {
           clearInterval(interval);
 
