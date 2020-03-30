@@ -77,10 +77,13 @@ module.exports = {
       return;
     }
 
+    var loan = false;
+
     if(db.find(user => user.id === msg.author.id).bits < 0)
     {
       embed.setTitle("⚠ Warning, you are using the Bits from your loan");
       msg.channel.send(embed);
+      loan = true;
     }
 
     db.find(user => user.id === msg.author.id).bits -= selCase.price;
@@ -126,7 +129,7 @@ module.exports = {
           else
           {
             embed.fields[0] = {name: "Outcome", value: "💎 You won \"" + outcome.name + "\"!", inline: true};
-            if(db.find(user => user.id === msg.author.id).trolls.includes(outcome.name))
+            if(db.find(user => user.id === msg.author.id).trolls.includes(outcome.name) || loan)
             {            
               var itemFound = false;
               var item;
@@ -141,7 +144,8 @@ module.exports = {
                 if(itemFound) break;
               }
 
-              embed.addField("Notes", "You already own this item. You will get it's value (" + item.price + ") in Bits instead");
+              if(!loan) embed.addField("Notes", "You already own this item. You will get it's value (" + item.price + ") in Bits instead");
+              else embed.addField("Notes", "You have a loan, so you can only get bit amounts (" + item.price + ")")
               embed.fields[2].value += "\n" + db.find(user => user.id === msg.author.id).bits + " Bits > " + (db.find(user => user.id === msg.author.id).bits + item.price) + " Bits";
               db.find(user => user.id === msg.author.id).bits += item.price;
             }
