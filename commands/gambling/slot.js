@@ -44,7 +44,7 @@ module.exports = {
       return;
     }
 
-    if(Number(args[2]) <= 0)
+    if(Number(args[2]) === 0)
     {
       embed.setTitle("❌ You cannot bet less than 1 Bit");
       msg.channel.send(embed);

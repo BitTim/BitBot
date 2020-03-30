@@ -69,7 +69,7 @@ module.exports = {
 
     var selCase = cases.find(item => item.name === args[2]);
 
-    if(db.find(user => user.id === msg.author.id).bits < selCase.price)
+    if(db.find(user => user.id === msg.author.id).bits < selCase.price && db.find(user => user.id === msg.author.id).bits >= 0)
     {
       embed.setTitle("❌ Insufficient funds");
       msg.channel.send(embed);
