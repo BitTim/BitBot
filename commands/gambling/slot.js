@@ -89,65 +89,63 @@ module.exports = {
     var spin = await msg.channel.send(embed);
 
     var counter = 0;
-    var interval = setInterval(() => {
+    var interval = setInterval(async () => {
       if(counter === 0) embed.fields[0] = {name: "Reel", value: reelSymbols[pos_bef[0]] + "❓❓\n" + reelSymbols[pos[0]] + "❓❓ <\n" + reelSymbols[pos_aft[0]] + "❓❓", inline: true};
       if(counter === 1) embed.fields[0] = {name: "Reel", value: reelSymbols[pos_bef[0]] + reelSymbols[pos_bef[1]] + "❓\n" + reelSymbols[pos[0]] + reelSymbols[pos[1]] + "❓ <\n" + reelSymbols[pos_aft[0]] + reelSymbols[pos_aft[1]] + "❓", inline: true};
       if(counter === 2) embed.fields[0] = {name: "Reel", value: reelSymbols[pos_bef[0]] + reelSymbols[pos_bef[1]] + reelSymbols[pos_bef[2]] + "\n" + reelSymbols[pos[0]] + reelSymbols[pos[1]] + reelSymbols[pos[2]] + "< \n" + reelSymbols[pos_aft[0]] + reelSymbols[pos_aft[1]] + reelSymbols[pos_aft[2]] + "\n", inline: true};
 
-      spin.edit(embed).then(() => {
-        if(++counter >= 3)
+      await spin.edit(embed)
+      if(++counter >= 3)
+      {
+        clearInterval(interval);
+
+        pos = pos.sort();
+        if(pos[0] === pos[1] && pos[1] === pos[2])
         {
-          clearInterval(interval);
-
-          pos = pos.sort();
-          if(pos[0] === pos[1] && pos[1] === pos[2])
-          {
-            bet = Math.floor(bet * 10);
-            embed.fields[2] = {name: "Payout", value: "🎰 Spin: " + bet + " Bits"};
-          }
-          else if(pos[0] === pos[1] || pos[1] === pos[2])
-          {
-            bet = Math.floor(bet * 1.25);
-            embed.fields[2] = {name: "Payout", value: "🎰 Spin: " + bet + " Bits"};
-          }
-          else
-          {
-            bet = 0;
-            embed.fields[2] = {name: "Payout", value: "🎰 Spin: 0 Bits"};
-          }
-
-	  
-	        if(embed.fields[3].value.includes("Awaiting results")) embed.fields[3].value = "";
-
-          if(pos.includes(0))
-          {
-            bet += 1
-            var val = embed.fields[3].value += "Germany Bonus: 1 Bits\n";
-            embed.fields[3] = {name: "Bonuses", value: val, inline: true}
-          }
-
-          if(pos.includes(4))
-          {
-            bet += 2;
-            var val = embed.fields[3].value += "Diamond Bonus: 2 Bits\n";
-            embed.fields[3] = {name: "Bonuses", value: val, inline: true}
-          }
-
-	        if(embed.fields[3].value === "") embed.fields[3].value = "No Bonuses";
-	        bal += Number(bet);
-		
-          if(bet === 0) embed.fields[2] = {name: "Payout", value: embed.fields[2].value += "\n💨 You have won nothing", inline: true};
-          else embed.fields[2] = {name: "Payout", value: embed.fields[2].value += "\n💰 You won " + bet + " Bits!", inline: true};
-
-          embed.fields[4] = {name: "Change in balance", value: embed.fields[4].value += (bal - bet) + " Bits > " + bal + " Bits\n", inline: true}; 
-
-          db.find(user => user.id === msg.author.id).bits += bet;
-          fs.writeFile("./data/users.json", JSON.stringify(db, null, "\t"), (err) => { if(err) throw err; });
-	        spin.edit(embed);
-
-	        slotDone = true;
+          bet = Math.floor(bet * 10);
+          embed.fields[2] = {name: "Payout", value: "🎰 Spin: " + bet + " Bits"};
         }
-      })
+        else if(pos[0] === pos[1] || pos[1] === pos[2])
+        {
+          bet = Math.floor(bet * 1.25);
+          embed.fields[2] = {name: "Payout", value: "🎰 Spin: " + bet + " Bits"};
+        }
+        else
+        {
+          bet = 0;
+          embed.fields[2] = {name: "Payout", value: "🎰 Spin: 0 Bits"};
+        }
+
+	      if(embed.fields[3].value.includes("Awaiting results")) embed.fields[3].value = "";
+
+        if(pos.includes(0))
+        {
+          bet += 1
+          var val = embed.fields[3].value += "Germany Bonus: 1 Bits\n";
+          embed.fields[3] = {name: "Bonuses", value: val, inline: true}
+        }
+
+        if(pos.includes(4))
+        {
+          bet += 2;
+          var val = embed.fields[3].value += "Diamond Bonus: 2 Bits\n";
+          embed.fields[3] = {name: "Bonuses", value: val, inline: true}
+        }
+
+	      if(embed.fields[3].value === "") embed.fields[3].value = "No Bonuses";
+	      bal += Number(bet);
+		
+        if(bet === 0) embed.fields[2] = {name: "Payout", value: embed.fields[2].value += "\n💨 You have won nothing", inline: true};
+        else embed.fields[2] = {name: "Payout", value: embed.fields[2].value += "\n💰 You won " + bet + " Bits!", inline: true};
+
+        embed.fields[4] = {name: "Change in balance", value: embed.fields[4].value += (bal - bet) + " Bits > " + bal + " Bits\n", inline: true}; 
+
+        db.find(user => user.id === msg.author.id).bits += bet;
+        fs.writeFile("./data/users.json", JSON.stringify(db, null, "\t"), (err) => { if(err) throw err; });
+	      spin.edit(embed);
+
+	      slotDone = true;
+      }
     }, 1000)
   }
 }

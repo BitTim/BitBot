@@ -109,57 +109,55 @@ module.exports = {
     }
 
     var counter = 0;
-    var interval = setInterval(() => {
+    var interval = setInterval(async () => {
       embed.fields[0].value += ".";
-      
-      sent.edit(embed).then(() =>
+      await sent.edit(embed)
+
+      if(++counter >= 3)
       {
-        if(++counter >= 3)
+        clearInterval(interval);
+
+        if(outcome.name.includes("---bit"))
         {
-          clearInterval(interval);
+          var amount = Number(outcome.name.split("-")[0])
 
-          if(outcome.name.includes("---bit"))
-          {
-            var amount = Number(outcome.name.split("-")[0])
+          embed.fields[0] = {name: "Outcome", value: "💰 You won " + amount + " Bits!", inline: true};
+          embed.fields[2].value += "\n" + db.find(user => user.id === msg.author.id).bits + " Bits > " + (db.find(user => user.id === msg.author.id).bits + amount) + " Bits";
+          db.find(user => user.id === msg.author.id).bits += amount;
+        }
+        else
+        {
+          embed.fields[0] = {name: "Outcome", value: "💎 You won \"" + outcome.name + "\"!", inline: true};
+          if(db.find(user => user.id === msg.author.id).trolls.includes(outcome.name) || loan)
+          {            
+            var itemFound = false;
+            var item;
 
-            embed.fields[0] = {name: "Outcome", value: "💰 You won " + amount + " Bits!", inline: true};
-            embed.fields[2].value += "\n" + db.find(user => user.id === msg.author.id).bits + " Bits > " + (db.find(user => user.id === msg.author.id).bits + amount) + " Bits";
-            db.find(user => user.id === msg.author.id).bits += amount;
+            for(var category of memes)
+            {
+              if(item = category.items.find(meme => meme.name === outcome.name))
+              {
+                itemFound = true;
+                break;
+              }
+              if(itemFound) break;
+            }
+
+            if(!loan) embed.addField("Notes", "You already own this item. You will get it's value (" + item.price + ") in Bits instead");
+            else embed.addField("Notes", "You have a loan, so you can only get bit amounts (" + item.price + ")")
+            embed.fields[2].value += "\n" + db.find(user => user.id === msg.author.id).bits + " Bits > " + (db.find(user => user.id === msg.author.id).bits + item.price) + " Bits";
+            db.find(user => user.id === msg.author.id).bits += item.price;
           }
           else
           {
-            embed.fields[0] = {name: "Outcome", value: "💎 You won \"" + outcome.name + "\"!", inline: true};
-            if(db.find(user => user.id === msg.author.id).trolls.includes(outcome.name) || loan)
-            {            
-              var itemFound = false;
-              var item;
-
-              for(var category of memes)
-              {
-                if(item = category.items.find(meme => meme.name === outcome.name))
-                {
-                  itemFound = true;
-                  break;
-                }
-                if(itemFound) break;
-              }
-
-              if(!loan) embed.addField("Notes", "You already own this item. You will get it's value (" + item.price + ") in Bits instead");
-              else embed.addField("Notes", "You have a loan, so you can only get bit amounts (" + item.price + ")")
-              embed.fields[2].value += "\n" + db.find(user => user.id === msg.author.id).bits + " Bits > " + (db.find(user => user.id === msg.author.id).bits + item.price) + " Bits";
-              db.find(user => user.id === msg.author.id).bits += item.price;
-            }
-            else
-            {
-              db.find(user => user.id === msg.author.id).trolls.push(outcome.name);
-            }
+            db.find(user => user.id === msg.author.id).trolls.push(outcome.name);
           }
-
-          sent.edit(embed);
-          fs.writeFile("./data/users.json", JSON.stringify(db, null, "\t"), (err) => { if(err) throw err; });
-          doneOpen = true;
         }
-      })
+
+        sent.edit(embed);
+        fs.writeFile("./data/users.json", JSON.stringify(db, null, "\t"), (err) => { if(err) throw err; });
+        doneOpen = true;
+      }
     }, 1000);
   }
 }
