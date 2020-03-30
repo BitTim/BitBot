@@ -86,7 +86,7 @@ module.exports = {
       loan = true;
     }
 
-    if(db.find(user => user.id === msg.author.id).bits < 1000000000)
+    if(db.find(user => user.id === msg.author.id).bits < -1000000000)
     {
       embed.setTitle("🔴 You have used to much of your loan, get funds from other users");
       msg.channel.send(embed);
