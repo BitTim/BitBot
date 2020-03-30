@@ -28,6 +28,7 @@ module.exports = {
     {
       embed.setTitle("❌ You have to specify a case to open");
       msg.channel.send(embed);
+      doneOpen = true;
       return;
     }
 
@@ -54,6 +55,7 @@ module.exports = {
       Outcomes are sorted from common to rare
       `);
       msg.channel.send(embed);
+      doneOpen = true;
       return;
     }
 
@@ -61,6 +63,7 @@ module.exports = {
     {
       embed.setTitle("❌ Case \"" + args[2] + "\" not found");
       msg.channel.send(embed);
+      doneOpen = true;
       return;
     }
 
@@ -70,6 +73,7 @@ module.exports = {
     {
       embed.setTitle("❌ Insufficient funds");
       msg.channel.send(embed);
+      doneOpen = true;
       return;
     }
 
