@@ -154,7 +154,7 @@ module.exports = {
           }
         }
 
-        sent.edit(embed);
+        await sent.edit(embed);
         fs.writeFile("./data/users.json", JSON.stringify(db, null, "\t"), (err) => { if(err) throw err; });
         doneOpen = true;
       }

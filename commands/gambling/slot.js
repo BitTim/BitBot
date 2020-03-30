@@ -142,7 +142,7 @@ module.exports = {
 
         db.find(user => user.id === msg.author.id).bits += bet;
         fs.writeFile("./data/users.json", JSON.stringify(db, null, "\t"), (err) => { if(err) throw err; });
-	      spin.edit(embed);
+	      await spin.edit(embed);
 
 	      slotDone = true;
       }
