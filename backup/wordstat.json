@@ -1,30 +1,110 @@
 [
 	{
-		"word": "-gamble",
-		"amount": 74
+		"word": "",
+		"amount": 303
 	},
 	{
-		"word": "case",
-		"amount": 57
+		"word": "-gamble",
+		"amount": 140
 	},
 	{
 		"word": "germany",
+		"amount": 96
+	},
+	{
+		"word": "case",
+		"amount": 96
+	},
+	{
+		"word": "dot",
 		"amount": 57
+	},
+	{
+		"word": "and",
+		"amount": 54
+	},
+	{
+		"word": "join",
+		"amount": 46
+	},
+	{
+		"word": "a",
+		"amount": 46
+	},
+	{
+		"word": "the",
+		"amount": 41
+	},
+	{
+		"word": "you",
+		"amount": 39
+	},
+	{
+		"word": "do",
+		"amount": 39
+	},
+	{
+		"word": "I",
+		"amount": 38
+	},
+	{
+		"word": "slot",
+		"amount": 38
+	},
+	{
+		"word": "to",
+		"amount": 37
+	},
+	{
+		"word": "we",
+		"amount": 35
+	},
+	{
+		"word": "!s",
+		"amount": 34
 	},
 	{
 		"word": "r",
 		"amount": 31
 	},
 	{
-		"word": "I",
-		"amount": 26
+		"word": "i",
+		"amount": 30
 	},
 	{
-		"word": "🤮",
-		"amount": 25
+		"word": "place",
+		"amount": 30
+	},
+	{
+		"word": "v",
+		"amount": 29
+	},
+	{
+		"word": "colin",
+		"amount": 28
+	},
+	{
+		"word": "https(place",
+		"amount": 28
+	},
+	{
+		"word": "here)",
+		"amount": 28
+	},
+	{
+		"word": "in",
+		"amount": 27
+	},
+	{
+		"word": "!p",
+		"amount": 27
 	},
 	{
 		"word": "#",
+		"amount": 25
+	},
+	{
+		"word": "it",
 		"amount": 25
 	},
 	{
@@ -32,167 +112,339 @@
 		"amount": 25
 	},
 	{
+		"word": "is",
+		"amount": 25
+	},
+	{
+		"word": "🤮",
+		"amount": 25
+	},
+	{
 		"word": "messege",
 		"amount": 25
 	},
 	{
-		"word": "!p",
-		"amount": 22
+		"word": "game",
+		"amount": 21
 	},
 	{
-		"word": "a",
-		"amount": 19
+		"word": "your",
+		"amount": 21
 	},
 	{
-		"word": "you",
-		"amount": 18
-	},
-	{
-		"word": "",
-		"amount": 16
-	},
-	{
-		"word": "the",
-		"amount": 14
+		"word": "https://discord.gg/cTVdFW",
+		"amount": 21
 	},
 	{
 		"word": "!skip",
-		"amount": 12
-	},
-	{
-		"word": "!s",
-		"amount": 12
-	},
-	{
-		"word": "is",
-		"amount": 11
-	},
-	{
-		"word": "it",
-		"amount": 11
-	},
-	{
-		"word": "bump",
-		"amount": 10
+		"amount": 19
 	},
 	{
 		"word": "!d",
-		"amount": 10
+		"amount": 18
 	},
 	{
-		"word": "i",
-		"amount": 9
+		"word": "bump",
+		"amount": 18
+	},
+	{
+		"word": "@everyone",
+		"amount": 18
+	},
+	{
+		"word": "g",
+		"amount": 16
+	},
+	{
+		"word": "be",
+		"amount": 16
+	},
+	{
+		"word": "at",
+		"amount": 16
+	},
+	{
+		"word": "lol",
+		"amount": 15
+	},
+	{
+		"word": "can",
+		"amount": 15
+	},
+	{
+		"word": "ur",
+		"amount": 15
 	},
 	{
 		"word": "!rank",
+		"amount": 14
+	},
+	{
+		"word": "on",
+		"amount": 14
+	},
+	{
+		"word": "have",
+		"amount": 13
+	},
+	{
+		"word": "not",
+		"amount": 13
+	},
+	{
+		"word": "name",
+		"amount": 13
+	},
+	{
+		"word": "fuck",
+		"amount": 13
+	},
+	{
+		"word": "me",
+		"amount": 12
+	},
+	{
+		"word": ".voice",
+		"amount": 12
+	},
+	{
+		"word": "!play",
+		"amount": 11
+	},
+	{
+		"word": "as",
+		"amount": 11
+	},
+	{
+		"word": "ok",
+		"amount": 10
+	},
+	{
+		"word": "this",
+		"amount": 10
+	},
+	{
+		"word": "so",
+		"amount": 10
+	},
+	{
+		"word": "m8",
+		"amount": 10
+	},
+	{
+		"word": "hosting",
 		"amount": 9
+	},
+	{
+		"word": "but",
+		"amount": 9
+	},
+	{
+		"word": "that",
+		"amount": 9
+	},
+	{
+		"word": "nice",
+		"amount": 9
+	},
+	{
+		"word": "all",
+		"amount": 9
+	},
+	{
+		"word": "with",
+		"amount": 9
+	},
+	{
+		"word": "u",
+		"amount": 8
+	},
+	{
+		"word": "for",
+		"amount": 8
 	},
 	{
 		"word": "-troll",
 		"amount": 8
 	},
 	{
-		"word": "to",
+		"word": "$give",
 		"amount": 8
 	},
 	{
-		"word": "as",
+		"word": "are",
 		"amount": 8
-	},
-	{
-		"word": "be",
-		"amount": 7
 	},
 	{
 		"word": "fucking",
+		"amount": 8
+	},
+	{
+		"word": "no",
+		"amount": 8
+	},
+	{
+		"word": "or",
+		"amount": 8
+	},
+	{
+		"word": "think",
+		"amount": 8
+	},
+	{
+		"word": "who",
+		"amount": 8
+	},
+	{
+		"word": "-bits",
 		"amount": 7
+	},
+	{
+		"word": "-info",
+		"amount": 7
+	},
+	{
+		"word": "anyone",
+		"amount": 7
+	},
+	{
+		"word": "<@!394968513120567316>",
+		"amount": 7
+	},
+	{
+		"word": "play",
+		"amount": 7
+	},
+	{
+		"word": "https://www.youtube.com/playlist?list=PLxP-GTvcJvsxZdXq_ra7ckUFTDuS4-ckj",
+		"amount": 6
+	},
+	{
+		"word": "Game",
+		"amount": 6
+	},
+	{
+		"word": "wanna",
+		"amount": 6
+	},
+	{
+		"word": "nigga",
+		"amount": 6
+	},
+	{
+		"word": "!shuffle",
+		"amount": 6
+	},
+	{
+		"word": "its",
+		"amount": 6
+	},
+	{
+		"word": "now",
+		"amount": 6
+	},
+	{
+		"word": "here",
+		"amount": 6
+	},
+	{
+		"word": "im",
+		"amount": 6
 	},
 	{
 		"word": "m",
 		"amount": 6
 	},
 	{
-		"word": "ok",
+		"word": "oh",
 		"amount": 6
 	},
 	{
-		"word": "lol",
+		"word": "@here",
 		"amount": 6
 	},
 	{
-		"word": "-info",
+		"word": "?",
 		"amount": 6
 	},
 	{
-		"word": "at",
+		"word": "You",
 		"amount": 6
 	},
 	{
-		"word": "slot",
+		"word": "try",
 		"amount": 6
 	},
 	{
-		"word": "hosting",
-		"amount": 5
-	},
-	{
-		"word": "https://www.youtube.com/playlist?list=PLxP-GTvcJvsxZdXq_ra7ckUFTDuS4-ckj",
-		"amount": 5
-	},
-	{
-		"word": "not",
-		"amount": 5
-	},
-	{
-		"word": "your",
-		"amount": 5
-	},
-	{
-		"word": "!play",
-		"amount": 5
+		"word": "stop",
+		"amount": 6
 	},
 	{
 		"word": "lmao",
+		"amount": 6
+	},
+	{
+		"word": "-play",
+		"amount": 6
+	},
+	{
+		"word": "good",
 		"amount": 5
 	},
 	{
-		"word": "no",
+		"word": "oi",
 		"amount": 5
 	},
 	{
-		"word": "fuck",
+		"word": "just",
 		"amount": 5
 	},
 	{
-		"word": "in",
+		"word": "vc",
 		"amount": 5
 	},
 	{
-		"word": "gambling",
-		"amount": 4
+		"word": "because",
+		"amount": 5
 	},
 	{
-		"word": "!shuffle",
-		"amount": 4
+		"word": "!S",
+		"amount": 5
 	},
 	{
-		"word": "meme",
-		"amount": 4
+		"word": "1.",
+		"amount": 5
 	},
 	{
-		"word": "play",
-		"amount": 4
+		"word": "was",
+		"amount": 5
 	},
 	{
-		"word": "do",
-		"amount": 4
+		"word": "some",
+		"amount": 5
 	},
 	{
-		"word": "for",
-		"amount": 4
+		"word": "uh",
+		"amount": 5
 	},
 	{
-		"word": "me",
+		"word": "xD",
+		"amount": 5
+	},
+	{
+		"word": "bruh",
+		"amount": 5
+	},
+	{
+		"word": "Join",
+		"amount": 5
+	},
+	{
+		"word": "csgo",
+		"amount": 5
+	},
+	{
+		"word": "what",
 		"amount": 4
 	},
 	{
@@ -200,103 +452,95 @@
 		"amount": 4
 	},
 	{
-		"word": "nigga",
+		"word": "Fucking",
 		"amount": 4
 	},
 	{
-		"word": "u",
-		"amount": 3
+		"word": "yes",
+		"amount": 4
 	},
 	{
-		"word": "name",
-		"amount": 3
+		"word": "from",
+		"amount": 4
 	},
 	{
-		"word": "-bits",
-		"amount": 3
-	},
-	{
-		"word": "hitler",
-		"amount": 3
-	},
-	{
-		"word": "with",
-		"amount": 3
-	},
-	{
-		"word": "because",
-		"amount": 3
-	},
-	{
-		"word": "are",
-		"amount": 3
-	},
-	{
-		"word": "never",
-		"amount": 3
-	},
-	{
-		"word": "!queue",
-		"amount": 3
-	},
-	{
-		"word": "bet",
-		"amount": 3
-	},
-	{
-		"word": "HOW",
-		"amount": 3
-	},
-	{
-		"word": "and",
-		"amount": 3
-	},
-	{
-		"word": "how",
-		"amount": 3
-	},
-	{
-		"word": "wanna",
-		"amount": 3
-	},
-	{
-		"word": "stop",
-		"amount": 3
-	},
-	{
-		"word": "wtf",
-		"amount": 3
-	},
-	{
-		"word": "good",
-		"amount": 3
-	},
-	{
-		"word": "cool",
-		"amount": 3
+		"word": "Type:",
+		"amount": 4
 	},
 	{
 		"word": "when",
+		"amount": 4
+	},
+	{
+		"word": "more",
+		"amount": 4
+	},
+	{
+		"word": "I’m",
+		"amount": 4
+	},
+	{
+		"word": "about",
+		"amount": 4
+	},
+	{
+		"word": "huh",
+		"amount": 4
+	},
+	{
+		"word": "du",
+		"amount": 4
+	},
+	{
+		"word": "Led",
+		"amount": 4
+	},
+	{
+		"word": "gamble",
+		"amount": 4
+	},
+	{
+		"word": "fun",
+		"amount": 4
+	},
+	{
+		"word": "wieder",
+		"amount": 4
+	},
+	{
+		"word": "like",
+		"amount": 4
+	},
+	{
+		"word": "then",
+		"amount": 4
+	},
+	{
+		"word": "go",
+		"amount": 4
+	},
+	{
+		"word": "meme",
+		"amount": 4
+	},
+	{
+		"word": "cool",
+		"amount": 4
+	},
+	{
+		"word": "bet",
+		"amount": 4
+	},
+	{
+		"word": "gambling",
+		"amount": 4
+	},
+	{
+		"word": "auf",
 		"amount": 3
 	},
 	{
-		"word": "@everyone",
-		"amount": 3
-	},
-	{
-		"word": "think",
-		"amount": 3
-	},
-	{
-		"word": "so",
-		"amount": 3
-	},
-	{
-		"word": "I'm",
-		"amount": 3
-	},
-	{
-		"word": "game",
+		"word": "wait",
 		"amount": 3
 	},
 	{
@@ -304,23 +548,207 @@
 		"amount": 3
 	},
 	{
-		"word": "today",
+		"word": "!queue",
 		"amount": 3
 	},
 	{
-		"word": "I’m",
+		"word": "<@!230407110637256705>",
 		"amount": 3
 	},
 	{
-		"word": "anyone",
+		"word": "am",
 		"amount": 3
 	},
 	{
-		"word": "this",
+		"word": "Me",
+		"amount": 3
+	},
+	{
+		"word": "😠",
+		"amount": 3
+	},
+	{
+		"word": "why",
+		"amount": 3
+	},
+	{
+		"word": "I'm",
+		"amount": 3
+	},
+	{
+		"word": "looking",
+		"amount": 3
+	},
+	{
+		"word": "ima",
+		"amount": 3
+	},
+	{
+		"word": "wtf",
+		"amount": 3
+	},
+	{
+		"word": "please",
+		"amount": 3
+	},
+	{
+		"word": "bros",
+		"amount": 3
+	},
+	{
+		"word": "wants",
+		"amount": 3
+	},
+	{
+		"word": "kannst",
+		"amount": 3
+	},
+	{
+		"word": "tomorrow",
+		"amount": 3
+	},
+	{
+		"word": "XD",
+		"amount": 3
+	},
+	{
+		"word": "cus",
 		"amount": 3
 	},
 	{
 		"word": "<#686951473279533128>",
+		"amount": 3
+	},
+	{
+		"word": "HOW",
+		"amount": 3
+	},
+	{
+		"word": "slot=gamble",
+		"amount": 3
+	},
+	{
+		"word": "NIGGA",
+		"amount": 3
+	},
+	{
+		"word": "-stop",
+		"amount": 3
+	},
+	{
+		"word": "So",
+		"amount": 3
+	},
+	{
+		"word": "noice",
+		"amount": 3
+	},
+	{
+		"word": "Anyone",
+		"amount": 3
+	},
+	{
+		"word": "everyone",
+		"amount": 3
+	},
+	{
+		"word": "how",
+		"amount": 3
+	},
+	{
+		"word": "!ranl",
+		"amount": 3
+	},
+	{
+		"word": "thanks",
+		"amount": 3
+	},
+	{
+		"word": "info",
+		"amount": 3
+	},
+	{
+		"word": "pls",
+		"amount": 3
+	},
+	{
+		"word": "homer",
+		"amount": 3
+	},
+	{
+		"word": "look",
+		"amount": 3
+	},
+	{
+		"word": "today",
+		"amount": 3
+	},
+	{
+		"word": "Sunday",
+		"amount": 3
+	},
+	{
+		"word": "<@&680202995635585035>",
+		"amount": 3
+	},
+	{
+		"word": "epic",
+		"amount": 3
+	},
+	{
+		"word": "never",
+		"amount": 3
+	},
+	{
+		"word": "lool",
+		"amount": 3
+	},
+	{
+		"word": "1",
+		"amount": 3
+	},
+	{
+		"word": "will",
+		"amount": 3
+	},
+	{
+		"word": "commands",
+		"amount": 3
+	},
+	{
+		"word": "thx",
+		"amount": 3
+	},
+	{
+		"word": "hitler",
+		"amount": 3
+	},
+	{
+		"word": "there",
+		"amount": 3
+	},
+	{
+		"word": "away",
+		"amount": 2
+	},
+	{
+		"word": "S",
+		"amount": 2
+	},
+	{
+		"word": "I’ll",
+		"amount": 2
+	},
+	{
+		"word": ">",
+		"amount": 2
+	},
+	{
+		"word": "cases",
+		"amount": 2
+	},
+	{
+		"word": "helo",
 		"amount": 2
 	},
 	{
@@ -328,43 +756,19 @@
 		"amount": 2
 	},
 	{
-		"word": "<#693629246639439973>",
+		"word": "tell",
 		"amount": 2
 	},
 	{
-		"word": "Led",
+		"word": "yess",
 		"amount": 2
 	},
 	{
-		"word": "caps",
+		"word": "time",
 		"amount": 2
 	},
 	{
-		"word": "use",
-		"amount": 2
-	},
-	{
-		"word": "vc",
-		"amount": 2
-	},
-	{
-		"word": "based",
-		"amount": 2
-	},
-	{
-		"word": "bruh",
-		"amount": 2
-	},
-	{
-		"word": "im",
-		"amount": 2
-	},
-	{
-		"word": "1.",
-		"amount": 2
-	},
-	{
-		"word": ";-;",
+		"word": "fixed",
 		"amount": 2
 	},
 	{
@@ -376,23 +780,15 @@
 		"amount": 2
 	},
 	{
-		"word": "MF",
+		"word": "chat",
 		"amount": 2
 	},
 	{
-		"word": "its",
+		"word": "<@!294204114097799169>",
 		"amount": 2
 	},
 	{
-		"word": "why",
-		"amount": 2
-	},
-	{
-		"word": "behemoth",
-		"amount": 2
-	},
-	{
-		"word": "@here",
+		"word": "put",
 		"amount": 2
 	},
 	{
@@ -400,15 +796,19 @@
 		"amount": 2
 	},
 	{
-		"word": "wehraboo",
+		"word": "slots",
 		"amount": 2
 	},
 	{
-		"word": "quiet",
+		"word": "ihr",
 		"amount": 2
 	},
 	{
-		"word": "ima",
+		"word": "best",
+		"amount": 2
+	},
+	{
+		"word": "Who",
 		"amount": 2
 	},
 	{
@@ -416,39 +816,15 @@
 		"amount": 2
 	},
 	{
-		"word": "Me",
+		"word": "yeah",
 		"amount": 2
 	},
 	{
-		"word": "Peace",
+		"word": "episch",
 		"amount": 2
 	},
 	{
-		"word": "https://www.pornhub.com/view_video.php?viewkey=ph5a42f42f4a6c5",
-		"amount": 2
-	},
-	{
-		"word": "try",
-		"amount": 2
-	},
-	{
-		"word": "At",
-		"amount": 2
-	},
-	{
-		"word": "tomorrow",
-		"amount": 2
-	},
-	{
-		"word": "that",
-		"amount": 2
-	},
-	{
-		"word": "They",
-		"amount": 2
-	},
-	{
-		"word": "GR",
+		"word": "👀",
 		"amount": 2
 	},
 	{
@@ -456,51 +832,43 @@
 		"amount": 2
 	},
 	{
-		"word": "but",
+		"word": "crack",
 		"amount": 2
 	},
 	{
-		"word": "more",
+		"word": "someone",
 		"amount": 2
 	},
 	{
-		"word": "So",
+		"word": "cs",
 		"amount": 2
 	},
 	{
-		"word": "Fucking",
+		"word": "Voice",
 		"amount": 2
 	},
 	{
-		"word": "pls",
+		"word": "minus",
 		"amount": 2
 	},
 	{
-		"word": "@here@everyone",
+		"word": "oof",
 		"amount": 2
 	},
 	{
-		"word": "time",
+		"word": "aye",
 		"amount": 2
 	},
 	{
-		"word": "!ranl",
+		"word": "wehraboo",
 		"amount": 2
 	},
 	{
-		"word": "have",
+		"word": "They",
 		"amount": 2
 	},
 	{
-		"word": "can",
-		"amount": 2
-	},
-	{
-		"word": "scrooger",
-		"amount": 2
-	},
-	{
-		"word": "now",
+		"word": "caps",
 		"amount": 2
 	},
 	{
@@ -508,619 +876,247 @@
 		"amount": 2
 	},
 	{
-		"word": "<@!230407110637256705>",
+		"word": "😄",
 		"amount": 2
 	},
 	{
-		"word": ".voice",
+		"word": "!join",
 		"amount": 2
-	},
-	{
-		"word": "here",
-		"amount": 2
-	},
-	{
-		"word": "You",
-		"amount": 2
-	},
-	{
-		"word": "ahhh",
-		"amount": 1
-	},
-	{
-		"word": "someone",
-		"amount": 1
-	},
-	{
-		"word": "NIGGA",
-		"amount": 1
-	},
-	{
-		"word": "name's",
-		"amount": 1
-	},
-	{
-		"word": "Yeah",
-		"amount": 1
-	},
-	{
-		"word": ":)))",
-		"amount": 1
-	},
-	{
-		"word": "dlc",
-		"amount": 1
-	},
-	{
-		"word": "Soviet",
-		"amount": 1
-	},
-	{
-		"word": "sherishish",
-		"amount": 1
-	},
-	{
-		"word": "yes?",
-		"amount": 1
-	},
-	{
-		"word": "idc",
-		"amount": 1
-	},
-	{
-		"word": "No",
-		"amount": 1
-	},
-	{
-		"word": "I'll",
-		"amount": 1
-	},
-	{
-		"word": "morning",
-		"amount": 1
-	},
-	{
-		"word": "![",
-		"amount": 1
-	},
-	{
-		"word": "bomb",
-		"amount": 1
-	},
-	{
-		"word": "sexy\\]",
-		"amount": 1
-	},
-	{
-		"word": "tmrw",
-		"amount": 1
-	},
-	{
-		"word": "Conference\nGame",
-		"amount": 1
-	},
-	{
-		"word": "<@!294204114097799169>",
-		"amount": 1
-	},
-	{
-		"word": "join",
-		"amount": 1
-	},
-	{
-		"word": "thx",
-		"amount": 1
-	},
-	{
-		"word": "spamming",
-		"amount": 1
-	},
-	{
-		"word": "\\",
-		"amount": 1
 	},
 	{
 		"word": "!disconnect",
-		"amount": 1
+		"amount": 2
 	},
 	{
-		"word": "put",
-		"amount": 1
+		"word": "<#693629246639439973>",
+		"amount": 2
 	},
 	{
-		"word": "siddiqi",
-		"amount": 1
+		"word": "anger",
+		"amount": 2
 	},
 	{
-		"word": "Maybe",
-		"amount": 1
+		"word": "https://www.pornhub.com/view_video.php?viewkey=ph5a42f42f4a6c5",
+		"amount": 2
 	},
 	{
-		"word": "wdym",
-		"amount": 1
+		"word": "https://www.youtube.com/playlist?list=PLxP-GTvcJvsw0lb5Hcgf1GTIjO2pRUBRi",
+		"amount": 2
 	},
 	{
-		"word": "logo",
-		"amount": 1
+		"word": "v=gamble",
+		"amount": 2
 	},
 	{
-		"word": "centaur",
-		"amount": 1
+		"word": "Peace",
+		"amount": 2
 	},
 	{
-		"word": "gea",
-		"amount": 1
+		"word": ";-;",
+		"amount": 2
 	},
 	{
-		"word": "FARMER",
-		"amount": 1
+		"word": "above",
+		"amount": 2
 	},
 	{
-		"word": "👀",
-		"amount": 1
+		"word": "gg/QGpkV8",
+		"amount": 2
 	},
 	{
-		"word": "U",
-		"amount": 1
+		"word": "number",
+		"amount": 2
 	},
 	{
-		"word": "jangbober",
-		"amount": 1
+		"word": "idc",
+		"amount": 2
 	},
 	{
-		"word": "bugbear",
-		"amount": 1
+		"word": "should",
+		"amount": 2
 	},
 	{
-		"word": "Games",
-		"amount": 1
+		"word": "hosted",
+		"amount": 2
 	},
 	{
-		"word": "ass",
-		"amount": 1
+		"word": "Bruh",
+		"amount": 2
 	},
 	{
-		"word": "<@!208656079360360462>",
-		"amount": 1
+		"word": "/",
+		"amount": 2
 	},
 	{
-		"word": "WARIOR",
-		"amount": 1
+		"word": "man",
+		"amount": 2
 	},
 	{
-		"word": "😠",
-		"amount": 1
+		"word": "use",
+		"amount": 2
 	},
 	{
-		"word": "imp",
-		"amount": 1
+		"word": "xd",
+		"amount": 2
 	},
 	{
-		"word": "exe\"",
-		"amount": 1
+		"word": "At",
+		"amount": 2
 	},
 	{
-		"word": "ranked",
-		"amount": 1
+		"word": "@here@everyone",
+		"amount": 2
 	},
 	{
-		"word": "uh",
-		"amount": 1
+		"word": "sad",
+		"amount": 2
 	},
 	{
-		"word": "info",
-		"amount": 1
+		"word": "scrooger",
+		"amount": 2
 	},
 	{
-		"word": "Nice",
-		"amount": 1
+		"word": "bits",
+		"amount": 2
 	},
 	{
-		"word": "nah",
-		"amount": 1
+		"word": "machen",
+		"amount": 2
 	},
 	{
-		"word": "please",
-		"amount": 1
+		"word": "90133906101901318",
+		"amount": 2
 	},
 	{
-		"word": "stiop",
-		"amount": 1
+		"word": "2",
+		"amount": 2
 	},
 	{
-		"word": "sry",
-		"amount": 1
+		"word": "5",
+		"amount": 2
 	},
 	{
-		"word": "yes",
-		"amount": 1
+		"word": "being",
+		"amount": 2
 	},
 	{
-		"word": "Do",
-		"amount": 1
-	},
-	{
-		"word": "who",
-		"amount": 1
-	},
-	{
-		"word": "dms",
-		"amount": 1
-	},
-	{
-		"word": "xD",
-		"amount": 1
-	},
-	{
-		"word": "bugbootar",
-		"amount": 1
-	},
-	{
-		"word": "Yes",
-		"amount": 1
-	},
-	{
-		"word": "waht",
-		"amount": 1
-	},
-	{
-		"word": "ah",
-		"amount": 1
-	},
-	{
-		"word": "*add",
-		"amount": 1
-	},
-	{
-		"word": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
-		"amount": 1
-	},
-	{
-		"word": "It",
-		"amount": 1
-	},
-	{
-		"word": "=info",
-		"amount": 1
-	},
-	{
-		"word": "Go",
-		"amount": 1
-	},
-	{
-		"word": "say",
-		"amount": 1
-	},
-	{
-		"word": "vc?",
-		"amount": 1
-	},
-	{
-		"word": "General",
-		"amount": 1
-	},
-	{
-		"word": "ohhhh",
-		"amount": 1
-	},
-	{
-		"word": "m8",
-		"amount": 1
-	},
-	{
-		"word": "just",
-		"amount": 1
-	},
-	{
-		"word": "gekaer",
-		"amount": 1
-	},
-	{
-		"word": "OGES'",
-		"amount": 1
-	},
-	{
-		"word": "RG",
-		"amount": 1
-	},
-	{
-		"word": "HRT",
-		"amount": 1
-	},
-	{
-		"word": "THS",
-		"amount": 1
-	},
-	{
-		"word": "T",
-		"amount": 1
-	},
-	{
-		"word": "DS",
-		"amount": 1
-	},
-	{
-		"word": "SDG",
-		"amount": 1
-	},
-	{
-		"word": "GD",
-		"amount": 1
-	},
-	{
-		"word": "omg",
-		"amount": 1
-	},
-	{
-		"word": "FIX",
-		"amount": 1
-	},
-	{
-		"word": "OK",
-		"amount": 1
-	},
-	{
-		"word": "TRY",
-		"amount": 1
-	},
-	{
-		"word": "AGAIN",
-		"amount": 1
-	},
-	{
-		"word": "brutus?",
-		"amount": 1
-	},
-	{
-		"word": "looking",
-		"amount": 1
-	},
-	{
-		"word": "julius",
-		"amount": 1
-	},
-	{
-		"word": "abnormal",
-		"amount": 1
-	},
-	{
-		"word": "thats",
-		"amount": 1
-	},
-	{
-		"word": "Horus.",
-		"amount": 1
-	},
-	{
-		"word": "wtf'",
-		"amount": 1
-	},
-	{
-		"word": "Osiris.",
-		"amount": 1
-	},
-	{
-		"word": "SEX",
-		"amount": 1
-	},
-	{
-		"word": "!help",
-		"amount": 1
-	},
-	{
-		"word": "Someone",
-		"amount": 1
-	},
-	{
-		"word": "agamennone",
-		"amount": 1
-	},
-	{
-		"word": "Player",
-		"amount": 1
-	},
-	{
-		"word": "accepting",
-		"amount": 1
-	},
-	{
-		"word": "rr",
-		"amount": 1
-	},
-	{
-		"word": "!skipall",
-		"amount": 1
-	},
-	{
-		"word": "\n------------------------\nID:",
-		"amount": 1
-	},
-	{
-		"word": "_gamble",
-		"amount": 1
-	},
-	{
-		"word": "90133855782223881\nPassword:",
-		"amount": 1
-	},
-	{
-		"word": "patroclo",
-		"amount": 1
-	},
-	{
-		"word": "payout",
-		"amount": 1
-	},
-	{
-		"word": "oh..",
-		"amount": 1
-	},
-	{
-		"word": "das",
-		"amount": 1
-	},
-	{
-		"word": "pleusicles",
-		"amount": 1
-	},
-	{
-		"word": "schlecht",
-		"amount": 1
-	},
-	{
-		"word": "geht",
-		"amount": 1
-	},
-	{
-		"word": "Sobek",
-		"amount": 1
-	},
-	{
-		"word": "isis",
-		"amount": 1
-	},
-	{
-		"word": "noice",
-		"amount": 1
-	},
-	{
-		"word": "Nekhbet",
-		"amount": 1
-	},
-	{
-		"word": "helllllllllllllllo",
-		"amount": 1
-	},
-	{
-		"word": "sekhbet",
-		"amount": 1
-	},
-	{
-		"word": "fds",
-		"amount": 1
-	},
-	{
-		"word": "gekear",
-		"amount": 1
-	},
-	{
-		"word": "df",
-		"amount": 1
-	},
-	{
-		"word": "!shufflew",
-		"amount": 1
-	},
-	{
-		"word": "geber",
-		"amount": 1
-	},
-	{
-		"word": "scrooge",
-		"amount": 1
-	},
-	{
-		"word": "Type:",
-		"amount": 1
-	},
-	{
-		"word": "Version",
-		"amount": 1
-	},
-	{
-		"word": "Rules\nGamer",
-		"amount": 1
-	},
-	{
-		"word": "Gentleman",
-		"amount": 1
-	},
-	{
-		"word": "myself",
-		"amount": 1
-	},
-	{
-		"word": "v",
-		"amount": 1
-	},
-	{
-		"word": "<@&680202995635585035>",
-		"amount": 1
-	},
-	{
-		"word": "STOP",
-		"amount": 1
-	},
-	{
-		"word": "kaper",
-		"amount": 1
-	},
-	{
-		"word": "SPAMMING",
-		"amount": 1
-	},
-	{
-		"word": "you're",
-		"amount": 1
-	},
-	{
-		"word": "Pathetic",
-		"amount": 1
-	},
-	{
-		"word": "sacrificed",
-		"amount": 1
-	},
-	{
-		"word": "gootar",
-		"amount": 1
-	},
-	{
-		"word": "fucckk",
-		"amount": 1
+		"word": "bot",
+		"amount": 2
 	},
 	{
 		"word": "1.9.0\nHoster:",
+		"amount": 2
+	},
+	{
+		"word": "die",
+		"amount": 2
+	},
+	{
+		"word": "quiet",
+		"amount": 2
+	},
+	{
+		"word": "ja",
+		"amount": 2
+	},
+	{
+		"word": "-skip",
+		"amount": 2
+	},
+	{
+		"word": "4",
+		"amount": 2
+	},
+	{
+		"word": "already",
+		"amount": 2
+	},
+	{
+		"word": "monday",
+		"amount": 2
+	},
+	{
+		"word": "es",
+		"amount": 2
+	},
+	{
+		"word": "Create",
+		"amount": 2
+	},
+	{
+		"word": "hast",
+		"amount": 2
+	},
+	{
+		"word": "black",
+		"amount": 2
+	},
+	{
+		"word": "wie",
+		"amount": 2
+	},
+	{
+		"word": "gefixt",
+		"amount": 2
+	},
+	{
+		"word": "behemoth",
+		"amount": 2
+	},
+	{
+		"word": "das",
+		"amount": 2
+	},
+	{
+		"word": "MF",
+		"amount": 2
+	},
+	{
+		"word": "sure",
+		"amount": 2
+	},
+	{
+		"word": "based",
+		"amount": 2
+	},
+	{
+		"word": "own",
+		"amount": 2
+	},
+	{
+		"word": "General",
+		"amount": 2
+	},
+	{
+		"word": "if",
+		"amount": 2
+	},
+	{
+		"word": "else",
+		"amount": 2
+	},
+	{
+		"word": "No",
+		"amount": 2
+	},
+	{
+		"word": "GR",
+		"amount": 2
+	},
+	{
+		"word": "<<@&693495786155147396>394968513120567316>",
+		"amount": 2
+	},
+	{
+		"word": "https://discord",
+		"amount": 2
+	},
+	{
+		"word": "fuuuuuuuuu",
 		"amount": 1
 	},
 	{
-		"word": "lump",
-		"amount": 1
-	},
-	{
-		"word": "f",
-		"amount": 1
-	},
-	{
-		"word": "<@!284384166940770306>",
-		"amount": 1
-	},
-	{
-		"word": "hows",
-		"amount": 1
-	},
-	{
-		"word": "bitch",
-		"amount": 1
-	},
-	{
-		"word": "Sunday",
-		"amount": 1
-	},
-	{
-		"word": "Boo",
-		"amount": 1
-	},
-	{
-		"word": "hoo",
-		"amount": 1
-	},
-	{
-		"word": "!que",
-		"amount": 1
-	},
-	{
-		"word": "can,",
+		"word": "car",
 		"amount": 1
 	},
 	{
@@ -1128,15 +1124,15 @@
 		"amount": 1
 	},
 	{
-		"word": "Idk",
+		"word": "Bits",
 		"amount": 1
 	},
 	{
-		"word": "sup",
+		"word": "😩",
 		"amount": 1
 	},
 	{
-		"word": "men",
+		"word": "finally",
 		"amount": 1
 	},
 	{
@@ -1148,27 +1144,27 @@
 		"amount": 1
 	},
 	{
-		"word": "!join",
+		"word": "**90133945160818695**",
 		"amount": 1
 	},
 	{
-		"word": "Niggers",
+		"word": "😅",
 		"amount": 1
 	},
 	{
-		"word": "car",
+		"word": "welp,",
 		"amount": 1
 	},
 	{
-		"word": "hm",
+		"word": "boi",
 		"amount": 1
 	},
 	{
-		"word": "Irish?",
+		"word": "uiii",
 		"amount": 1
 	},
 	{
-		"word": "10-1",
+		"word": "gamblen",
 		"amount": 1
 	},
 	{
@@ -1180,47 +1176,47 @@
 		"amount": 1
 	},
 	{
-		"word": "!D",
+		"word": "THS",
 		"amount": 1
 	},
 	{
-		"word": "German",
+		"word": "fack",
 		"amount": 1
 	},
 	{
-		"word": "army’s",
+		"word": "heißen",
 		"amount": 1
 	},
 	{
-		"word": "SOUNDS",
+		"word": "help",
 		"amount": 1
 	},
 	{
-		"word": "best",
+		"word": "heeeeeelp",
 		"amount": 1
 	},
 	{
-		"word": "Union",
+		"word": "!Play",
 		"amount": 1
 	},
 	{
-		"word": "!S",
+		"word": "aber",
 		"amount": 1
 	},
 	{
-		"word": "weren’t",
+		"word": "noooooooooooooooooooooo",
 		"amount": 1
 	},
 	{
-		"word": "Now",
+		"word": "Just",
 		"amount": 1
 	},
 	{
-		"word": "tu,",
+		"word": "<@!406680217935937557>",
 		"amount": 1
 	},
 	{
-		"word": "sexy",
+		"word": "Hello,",
 		"amount": 1
 	},
 	{
@@ -1232,27 +1228,27 @@
 		"amount": 1
 	},
 	{
-		"word": "Expect",
+		"word": "men",
 		"amount": 1
 	},
 	{
-		"word": "refiq",
+		"word": "!D",
 		"amount": 1
 	},
 	{
-		"word": "abdullah",
+		"word": "see",
 		"amount": 1
 	},
 	{
-		"word": "4",
+		"word": "later",
 		"amount": 1
 	},
 	{
-		"word": "/",
+		"word": "omg",
 		"amount": 1
 	},
 	{
-		"word": "then",
+		"word": "sorry",
 		"amount": 1
 	},
 	{
@@ -1260,27 +1256,7 @@
 		"amount": 1
 	},
 	{
-		"word": "homer",
-		"amount": 1
-	},
-	{
-		"word": "sickle",
-		"amount": 1
-	},
-	{
-		"word": "oh",
-		"amount": 1
-	},
-	{
-		"word": "!P",
-		"amount": 1
-	},
-	{
-		"word": "hammer",
-		"amount": 1
-	},
-	{
-		"word": "aur",
+		"word": "REEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
 		"amount": 1
 	},
 	{
@@ -1288,55 +1264,79 @@
 		"amount": 1
 	},
 	{
-		"word": "YOU",
+		"word": "L",
 		"amount": 1
 	},
 	{
-		"word": "DIRTY",
+		"word": "https://steamcommunity.com/sharedfiles/filedetails/?id=1826643372",
 		"amount": 1
 	},
 	{
-		"word": "TAJIKISTANI",
+		"word": "<@!466035692401852417>",
 		"amount": 1
 	},
 	{
-		"word": "noo",
+		"word": "<@&627635914360881162>",
 		"amount": 1
 	},
 	{
-		"word": "wrong",
+		"word": "Time",
 		"amount": 1
 	},
 	{
-		"word": "Who",
+		"word": "boomere",
 		"amount": 1
 	},
 	{
-		"word": "https://steamcommunity.com/sharedfiles/filedetails/?id=846066944&searchtext=player+led\nPlayer",
+		"word": "funnyy",
 		"amount": 1
 	},
 	{
-		"word": "go",
+		"word": "haha",
 		"amount": 1
 	},
 	{
-		"word": "<@!394968513120567316>",
+		"word": "mee6",
 		"amount": 1
 	},
 	{
-		"word": "sure",
+		"word": "Mee6",
 		"amount": 1
 	},
 	{
-		"word": "should",
+		"word": "ezzzzzzzzzzzzzzzzzzzzzzzzzzz",
 		"amount": 1
 	},
 	{
-		"word": "was",
+		"word": "gooooooooo",
 		"amount": 1
 	},
 	{
-		"word": "everyone",
+		"word": "!que",
+		"amount": 1
+	},
+	{
+		"word": "<@!334810661836292097>",
+		"amount": 1
+	},
+	{
+		"word": "!",
+		"amount": 1
+	},
+	{
+		"word": "isis",
+		"amount": 1
+	},
+	{
+		"word": "wcome",
+		"amount": 1
+	},
+	{
+		"word": "yeaah",
+		"amount": 1
+	},
+	{
+		"word": "U",
 		"amount": 1
 	},
 	{
@@ -1352,31 +1352,31 @@
 		"amount": 1
 	},
 	{
-		"word": "HIET",
+		"word": "<@!261730014029021184>",
 		"amount": 1
 	},
 	{
-		"word": "KEYBOARD",
+		"word": "mad",
 		"amount": 1
 	},
 	{
-		"word": "else",
+		"word": "Luke",
 		"amount": 1
 	},
 	{
-		"word": "ccol",
+		"word": "gea",
 		"amount": 1
 	},
 	{
-		"word": "_troll",
+		"word": "Yeah,",
 		"amount": 1
 	},
 	{
-		"word": "<@!404538262288334848>",
+		"word": "ran",
 		"amount": 1
 	},
 	{
-		"word": "Semi-Historical",
+		"word": "hochgamblen",
 		"amount": 1
 	},
 	{
@@ -1384,7 +1384,7 @@
 		"amount": 1
 	},
 	{
-		"word": "Your",
+		"word": "Gentrifizierung",
 		"amount": 1
 	},
 	{
@@ -1392,11 +1392,11 @@
 		"amount": 1
 	},
 	{
-		"word": "idk",
+		"word": "Peruvians\n2.",
 		"amount": 1
 	},
 	{
-		"word": "some",
+		"word": "vor",
 		"amount": 1
 	},
 	{
@@ -1404,11 +1404,11 @@
 		"amount": 1
 	},
 	{
-		"word": "Peruvians\n2.",
+		"word": "ezzzzzzzzzzz",
 		"amount": 1
 	},
 	{
-		"word": "Turks\n3.",
+		"word": "ka",
 		"amount": 1
 	},
 	{
@@ -1416,7 +1416,7 @@
 		"amount": 1
 	},
 	{
-		"word": "XD",
+		"word": "damn",
 		"amount": 1
 	},
 	{
@@ -1428,7 +1428,7 @@
 		"amount": 1
 	},
 	{
-		"word": "<@553979721147351051>",
+		"word": "15GB",
 		"amount": 1
 	},
 	{
@@ -1436,19 +1436,19 @@
 		"amount": 1
 	},
 	{
-		"word": "commands",
+		"word": "minin'",
 		"amount": 1
 	},
 	{
-		"word": "gamblin",
+		"word": "mine",
 		"amount": 1
 	},
 	{
-		"word": "game#",
+		"word": "https://www.youtube.com/watch?v=YekLRkiIW4Y",
 		"amount": 1
 	},
 	{
-		"word": "<@!691058683681177700>",
+		"word": "26",
 		"amount": 1
 	},
 	{
@@ -1456,31 +1456,31 @@
 		"amount": 1
 	},
 	{
-		"word": "Jon",
+		"word": "https://www.youtube.com/watch?v=Ds0vpkvwxzg",
 		"amount": 1
 	},
 	{
-		"word": "!Play",
+		"word": "Willkommen",
 		"amount": 1
 	},
 	{
-		"word": "<#627631404687294529>",
+		"word": "stay",
 		"amount": 1
 	},
 	{
-		"word": "helo",
+		"word": "OK",
 		"amount": 1
 	},
 	{
-		"word": "check",
+		"word": "bitsh",
 		"amount": 1
 	},
 	{
-		"word": "ur",
+		"word": "Games",
 		"amount": 1
 	},
 	{
-		"word": "clidus",
+		"word": "??",
 		"amount": 1
 	},
 	{
@@ -1488,7 +1488,7 @@
 		"amount": 1
 	},
 	{
-		"word": "wants",
+		"word": "exe\"",
 		"amount": 1
 	},
 	{
@@ -1496,7 +1496,7 @@
 		"amount": 1
 	},
 	{
-		"word": "tell",
+		"word": "tu,",
 		"amount": 1
 	},
 	{
@@ -1512,11 +1512,11 @@
 		"amount": 1
 	},
 	{
-		"word": "about",
+		"word": "Expect",
 		"amount": 1
 	},
 	{
-		"word": "xd",
+		"word": "gekaer",
 		"amount": 1
 	},
 	{
@@ -1544,11 +1544,11 @@
 		"amount": 1
 	},
 	{
-		"word": "wieder",
+		"word": "OGES'",
 		"amount": 1
 	},
 	{
-		"word": "on",
+		"word": "morning",
 		"amount": 1
 	},
 	{
@@ -1556,7 +1556,7 @@
 		"amount": 1
 	},
 	{
-		"word": "black",
+		"word": "<@!691058683681177700>",
 		"amount": 1
 	},
 	{
@@ -1564,7 +1564,7 @@
 		"amount": 1
 	},
 	{
-		"word": "I’ll",
+		"word": "nah",
 		"amount": 1
 	},
 	{
@@ -1576,7 +1576,7 @@
 		"amount": 1
 	},
 	{
-		"word": "Voice",
+		"word": "gootar",
 		"amount": 1
 	},
 	{
@@ -1584,7 +1584,7 @@
 		"amount": 1
 	},
 	{
-		"word": "chat",
+		"word": "say",
 		"amount": 1
 	},
 	{
@@ -1592,7 +1592,7 @@
 		"amount": 1
 	},
 	{
-		"word": "thanks",
+		"word": "https://steamcommunity.com/sharedfiles/filedetails/?id=846066944&searchtext=player+led\nPlayer",
 		"amount": 1
 	},
 	{
@@ -1644,7 +1644,7 @@
 		"amount": 1
 	},
 	{
-		"word": "look",
+		"word": "!skipall",
 		"amount": 1
 	},
 	{
@@ -1688,7 +1688,7 @@
 		"amount": 1
 	},
 	{
-		"word": "gamvle",
+		"word": "rr",
 		"amount": 1
 	},
 	{
@@ -1696,11 +1696,7 @@
 		"amount": 1
 	},
 	{
-		"word": "slots",
-		"amount": 1
-	},
-	{
-		"word": "=bits",
+		"word": "Conference\nGame",
 		"amount": 1
 	},
 	{
@@ -1712,11 +1708,1255 @@
 		"amount": 1
 	},
 	{
-		"word": "already",
+		"word": "name's",
 		"amount": 1
 	},
 	{
-		"word": "own",
+		"word": "TRY",
+		"amount": 1
+	},
+	{
+		"word": "Also,",
+		"amount": 1
+	},
+	{
+		"word": "AGAIN",
+		"amount": 1
+	},
+	{
+		"word": "brutus?",
+		"amount": 1
+	},
+	{
+		"word": "DS",
+		"amount": 1
+	},
+	{
+		"word": "*anger*",
+		"amount": 1
+	},
+	{
+		"word": "_gamble",
+		"amount": 1
+	},
+	{
+		"word": "oh..",
+		"amount": 1
+	},
+	{
+		"word": "julius",
+		"amount": 1
+	},
+	{
+		"word": "abnormal",
+		"amount": 1
+	},
+	{
+		"word": "omegalul",
+		"amount": 1
+	},
+	{
+		"word": "thats",
+		"amount": 1
+	},
+	{
+		"word": "ty",
+		"amount": 1
+	},
+	{
+		"word": "Horus.",
+		"amount": 1
+	},
+	{
+		"word": "oke",
+		"amount": 1
+	},
+	{
+		"word": "wtf'",
+		"amount": 1
+	},
+	{
+		"word": "Custom",
+		"amount": 1
+	},
+	{
+		"word": "Osiris.",
+		"amount": 1
+	},
+	{
+		"word": "yes?",
+		"amount": 1
+	},
+	{
+		"word": "To",
+		"amount": 1
+	},
+	{
+		"word": "dlc",
+		"amount": 1
+	},
+	{
+		"word": "I'll",
+		"amount": 1
+	},
+	{
+		"word": "!help",
+		"amount": 1
+	},
+	{
+		"word": "Someone",
+		"amount": 1
+	},
+	{
+		"word": "-p",
+		"amount": 1
+	},
+	{
+		"word": "agamennone",
+		"amount": 1
+	},
+	{
+		"word": "-shuffle",
+		"amount": 1
+	},
+	{
+		"word": "sexy\\]",
+		"amount": 1
+	},
+	{
+		"word": "tmrw",
+		"amount": 1
+	},
+	{
+		"word": "accepting",
+		"amount": 1
+	},
+	{
+		"word": "sexy",
+		"amount": 1
+	},
+	{
+		"word": "siddiqi",
+		"amount": 1
+	},
+	{
+		"word": "spamming",
+		"amount": 1
+	},
+	{
+		"word": "arent",
+		"amount": 1
+	},
+	{
+		"word": "Steam",
+		"amount": 1
+	},
+	{
+		"word": "\\",
+		"amount": 1
+	},
+	{
+		"word": "\n------------------------\nID:",
+		"amount": 1
+	},
+	{
+		"word": "RG",
+		"amount": 1
+	},
+	{
+		"word": "Homer",
+		"amount": 1
+	},
+	{
+		"word": "Simpson",
+		"amount": 1
+	},
+	{
+		"word": "(Luke)Last",
+		"amount": 1
+	},
+	{
+		"word": "patroclo",
+		"amount": 1
+	},
+	{
+		"word": "Monday",
+		"amount": 1
+	},
+	{
+		"word": "payout",
+		"amount": 1
+	},
+	{
+		"word": "lump",
+		"amount": 1
+	},
+	{
+		"word": "Ite,",
+		"amount": 1
+	},
+	{
+		"word": "imma",
+		"amount": 1
+	},
+	{
+		"word": "head",
+		"amount": 1
+	},
+	{
+		"word": "Rules\nGamer",
+		"amount": 1
+	},
+	{
+		"word": "pleusicles",
+		"amount": 1
+	},
+	{
+		"word": "lets",
+		"amount": 1
+	},
+	{
+		"word": "schlecht",
+		"amount": 1
+	},
+	{
+		"word": "YEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEET",
+		"amount": 1
+	},
+	{
+		"word": "geht",
+		"amount": 1
+	},
+	{
+		"word": "jangbober",
+		"amount": 1
+	},
+	{
+		"word": "read",
+		"amount": 1
+	},
+	{
+		"word": "Sobek",
+		"amount": 1
+	},
+	{
+		"word": "ass",
+		"amount": 1
+	},
+	{
+		"word": "wow",
+		"amount": 1
+	},
+	{
+		"word": "kaper",
+		"amount": 1
+	},
+	{
+		"word": "MEEEEEEEEEEEEEEEEE",
+		"amount": 1
+	},
+	{
+		"word": "Nekhbet",
+		"amount": 1
+	},
+	{
+		"word": "wt",
+		"amount": 1
+	},
+	{
+		"word": "oohhh",
+		"amount": 1
+	},
+	{
+		"word": "helllllllllllllllo",
+		"amount": 1
+	},
+	{
+		"word": "<@334810661836292097>",
+		"amount": 1
+	},
+	{
+		"word": "give",
+		"amount": 1
+	},
+	{
+		"word": "fds",
+		"amount": 1
+	},
+	{
+		"word": "Shit",
+		"amount": 1
+	},
+	{
+		"word": "gekear",
+		"amount": 1
+	},
+	{
+		"word": "anybody",
+		"amount": 1
+	},
+	{
+		"word": "!shuffle\\",
+		"amount": 1
+	},
+	{
+		"word": "The",
+		"amount": 1
+	},
+	{
+		"word": "!shufflew",
+		"amount": 1
+	},
+	{
+		"word": "https://cdn.discordapp.com/attachments/675936934589104148/693638619369308190/unknown.png",
+		"amount": 1
+	},
+	{
+		"word": "geber",
+		"amount": 1
+	},
+	{
+		"word": "Oof",
+		"amount": 1
+	},
+	{
+		"word": "playing",
+		"amount": 1
+	},
+	{
+		"word": "scrooge",
+		"amount": 1
+	},
+	{
+		"word": "![",
+		"amount": 1
+	},
+	{
+		"word": "stiop",
+		"amount": 1
+	},
+	{
+		"word": "Version",
+		"amount": 1
+	},
+	{
+		"word": "K",
+		"amount": 1
+	},
+	{
+		"word": "Me2",
+		"amount": 1
+	},
+	{
+		"word": "level",
+		"amount": 1
+	},
+	{
+		"word": "16",
+		"amount": 1
+	},
+	{
+		"word": "=info",
+		"amount": 1
+	},
+	{
+		"word": ":_)))))))",
+		"amount": 1
+	},
+	{
+		"word": "myself",
+		"amount": 1
+	},
+	{
+		"word": "It",
+		"amount": 1
+	},
+	{
+		"word": "https://discord.gg/QGpkV8",
+		"amount": 1
+	},
+	{
+		"word": "sad?",
+		"amount": 1
+	},
+	{
+		"word": "Do",
+		"amount": 1
+	},
+	{
+		"word": "sekhbet",
+		"amount": 1
+	},
+	{
+		"word": "sry",
+		"amount": 1
+	},
+	{
+		"word": ":)))",
+		"amount": 1
+	},
+	{
+		"word": "FIX",
+		"amount": 1
+	},
+	{
+		"word": "SPAMMING",
+		"amount": 1
+	},
+	{
+		"word": "Is",
+		"amount": 1
+	},
+	{
+		"word": "ah",
+		"amount": 1
+	},
+	{
+		"word": "*add",
+		"amount": 1
+	},
+	{
+		"word": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+		"amount": 1
+	},
+	{
+		"word": "Pathetic",
+		"amount": 1
+	},
+	{
+		"word": "sacrificed",
+		"amount": 1
+	},
+	{
+		"word": "supposed",
+		"amount": 1
+	},
+	{
+		"word": "watch",
+		"amount": 1
+	},
+	{
+		"word": "ay",
+		"amount": 1
+	},
+	{
+		"word": "fucckk",
+		"amount": 1
+	},
+	{
+		"word": "bugbootar",
+		"amount": 1
+	},
+	{
+		"word": "Maybe",
+		"amount": 1
+	},
+	{
+		"word": "Yes",
+		"amount": 1
+	},
+	{
+		"word": "*posted",
+		"amount": 1
+	},
+	{
+		"word": "Have",
+		"amount": 1
+	},
+	{
+		"word": "f",
+		"amount": 1
+	},
+	{
+		"word": "Dumb",
+		"amount": 1
+	},
+	{
+		"word": "hi",
+		"amount": 1
+	},
+	{
+		"word": "vc?",
+		"amount": 1
+	},
+	{
+		"word": "hows",
+		"amount": 1
+	},
+	{
+		"word": "out",
+		"amount": 1
+	},
+	{
+		"word": "bitch",
+		"amount": 1
+	},
+	{
+		"word": "\n<@!264484732434120705>",
+		"amount": 1
+	},
+	{
+		"word": "1234",
+		"amount": 1
+	},
+	{
+		"word": "pass",
+		"amount": 1
+	},
+	{
+		"word": "i'm",
+		"amount": 1
+	},
+	{
+		"word": "Boo",
+		"amount": 1
+	},
+	{
+		"word": "hoo",
+		"amount": 1
+	},
+	{
+		"word": "next",
+		"amount": 1
+	},
+	{
+		"word": "saddest",
+		"amount": 1
+	},
+	{
+		"word": "thing",
+		"amount": 1
+	},
+	{
+		"word": "can,",
+		"amount": 1
+	},
+	{
+		"word": "Nice",
+		"amount": 1
+	},
+	{
+		"word": "vv",
+		"amount": 1
+	},
+	{
+		"word": "<@!428246697546612747>",
+		"amount": 1
+	},
+	{
+		"word": "open",
+		"amount": 1
+	},
+	{
+		"word": "Idk",
+		"amount": 1
+	},
+	{
+		"word": "😫",
+		"amount": 1
+	},
+	{
+		"word": "sup",
+		"amount": 1
+	},
+	{
+		"word": "Yeah",
+		"amount": 1
+	},
+	{
+		"word": "maik,",
+		"amount": 1
+	},
+	{
+		"word": "ill",
+		"amount": 1
+	},
+	{
+		"word": "trotzdem",
+		"amount": 1
+	},
+	{
+		"word": "https://discord.gg/UcE2UM2",
+		"amount": 1
+	},
+	{
+		"word": "STOP",
+		"amount": 1
+	},
+	{
+		"word": "SDG",
+		"amount": 1
+	},
+	{
+		"word": "gemacht",
+		"amount": 1
+	},
+	{
+		"word": "Niggers",
+		"amount": 1
+	},
+	{
+		"word": "df",
+		"amount": 1
+	},
+	{
+		"word": "fuuuu",
+		"amount": 1
+	},
+	{
+		"word": "//discord.gg/QGpkV8",
+		"amount": 1
+	},
+	{
+		"word": "https://discord_gg/QGpkV8",
+		"amount": 1
+	},
+	{
+		"word": "hm",
+		"amount": 1
+	},
+	{
+		"word": "Irish?",
+		"amount": 1
+	},
+	{
+		"word": "erstmal",
+		"amount": 1
+	},
+	{
+		"word": "10-1",
+		"amount": 1
+	},
+	{
+		"word": "Hamb",
+		"amount": 1
+	},
+	{
+		"word": "😛",
+		"amount": 1
+	},
+	{
+		"word": "T",
+		"amount": 1
+	},
+	{
+		"word": "schnelle",
+		"amount": 1
+	},
+	{
+		"word": "paar",
+		"amount": 1
+	},
+	{
+		"word": "bugs",
+		"amount": 1
+	},
+	{
+		"word": "HRT",
+		"amount": 1
+	},
+	{
+		"word": "German",
+		"amount": 1
+	},
+	{
+		"word": "oooooooooooooooooooooof",
+		"amount": 1
+	},
+	{
+		"word": "online",
+		"amount": 1
+	},
+	{
+		"word": "army’s",
+		"amount": 1
+	},
+	{
+		"word": "SOUNDS",
+		"amount": 1
+	},
+	{
+		"word": "bruh?",
+		"amount": 1
+	},
+	{
+		"word": "leave",
+		"amount": 1
+	},
+	{
+		"word": "GD",
+		"amount": 1
+	},
+	{
+		"word": "Union",
+		"amount": 1
+	},
+	{
+		"word": "gamvle",
+		"amount": 1
+	},
+	{
+		"word": "bomb",
+		"amount": 1
+	},
+	{
+		"word": "lolo",
+		"amount": 1
+	},
+	{
+		"word": "weren’t",
+		"amount": 1
+	},
+	{
+		"word": "-12",
+		"amount": 1
+	},
+	{
+		"word": "Now",
+		"amount": 1
+	},
+	{
+		"word": "ahhh",
+		"amount": 1
+	},
+	{
+		"word": "<@!297805539071623168>",
+		"amount": 1
+	},
+	{
+		"word": "SEX",
+		"amount": 1
+	},
+	{
+		"word": "idgaf",
+		"amount": 1
+	},
+	{
+		"word": "ohhhh",
+		"amount": 1
+	},
+	{
+		"word": "https://gyazo.com/7572d90bf2b48b9cc4d79e3580ec75f1",
+		"amount": 1
+	},
+	{
+		"word": "90133855782223881\nPassword:",
+		"amount": 1
+	},
+	{
+		"word": "erika",
+		"amount": 1
+	},
+	{
+		"word": "LMAO",
+		"amount": 1
+	},
+	{
+		"word": "POOOOOOOR",
+		"amount": 1
+	},
+	{
+		"word": "🙂",
+		"amount": 1
+	},
+	{
+		"word": "refiq",
+		"amount": 1
+	},
+	{
+		"word": "10000000000000000000000000000000000000000000000000000000000000000",
+		"amount": 1
+	},
+	{
+		"word": "abdullah",
+		"amount": 1
+	},
+	{
+		"word": "FUUUUUUUCK",
+		"amount": 1
+	},
+	{
+		"word": "Go",
+		"amount": 1
+	},
+	{
+		"word": "🤦‍♂️",
+		"amount": 1
+	},
+	{
+		"word": "cock",
+		"amount": 1
+	},
+	{
+		"word": "wdym",
+		"amount": 1
+	},
+	{
+		"word": "Channels",
+		"amount": 1
+	},
+	{
+		"word": "Soviet",
+		"amount": 1
+	},
+	{
+		"word": "without",
+		"amount": 1
+	},
+	{
+		"word": "permission",
+		"amount": 1
+	},
+	{
+		"word": "Player",
+		"amount": 1
+	},
+	{
+		"word": "<@!208656079360360462>",
+		"amount": 1
+	},
+	{
+		"word": "unfunny",
+		"amount": 1
+	},
+	{
+		"word": "sickle",
+		"amount": 1
+	},
+	{
+		"word": "FARMER",
+		"amount": 1
+	},
+	{
+		"word": "https://www.youtube.com/watch?v=5OKdbc0DYpM",
+		"amount": 1
+	},
+	{
+		"word": "!P",
+		"amount": 1
+	},
+	{
+		"word": "he",
+		"amount": 1
+	},
+	{
+		"word": "hammer",
+		"amount": 1
+	},
+	{
+		"word": "stopm",
+		"amount": 1
+	},
+	{
+		"word": "aur",
+		"amount": 1
+	},
+	{
+		"word": "Starting",
+		"amount": 1
+	},
+	{
+		"word": "mebankrupt",
+		"amount": 1
+	},
+	{
+		"word": "OOK",
+		"amount": 1
+	},
+	{
+		"word": "YOU",
+		"amount": 1
+	},
+	{
+		"word": "Well",
+		"amount": 1
+	},
+	{
+		"word": "soooooooooooooooooo",
+		"amount": 1
+	},
+	{
+		"word": "DIRTY",
+		"amount": 1
+	},
+	{
+		"word": "TAJIKISTANI",
+		"amount": 1
+	},
+	{
+		"word": "https://discord.gg/3mBkx8",
+		"amount": 1
+	},
+	{
+		"word": "noo",
+		"amount": 1
+	},
+	{
+		"word": "<@!284384166940770306>",
+		"amount": 1
+	},
+	{
+		"word": "wrong",
+		"amount": 1
+	},
+	{
+		"word": "you're",
+		"amount": 1
+	},
+	{
+		"word": "imp",
+		"amount": 1
+	},
+	{
+		"word": "heheeaaaaaaaaaaaaaaaaaaaaa",
+		"amount": 1
+	},
+	{
+		"word": "WARIOR",
+		"amount": 1
+	},
+	{
+		"word": "too",
+		"amount": 1
+	},
+	{
+		"word": "far",
+		"amount": 1
+	},
+	{
+		"word": "centaur",
+		"amount": 1
+	},
+	{
+		"word": "ae",
+		"amount": 1
+	},
+	{
+		"word": "😦",
+		"amount": 1
+	},
+	{
+		"word": "<@!508051205063180298>",
+		"amount": 1
+	},
+	{
+		"word": "logo",
+		"amount": 1
+	},
+	{
+		"word": "gtg",
+		"amount": 1
+	},
+	{
+		"word": "S!",
+		"amount": 1
+	},
+	{
+		"word": "Pinged",
+		"amount": 1
+	},
+	{
+		"word": "!Ss",
+		"amount": 1
+	},
+	{
+		"word": "dms",
+		"amount": 1
+	},
+	{
+		"word": "nvm",
+		"amount": 1
+	},
+	{
+		"word": "<@!441357219171270668>",
+		"amount": 1
+	},
+	{
+		"word": "whos",
+		"amount": 1
+	},
+	{
+		"word": "on'",
+		"amount": 1
+	},
+	{
+		"word": "general",
+		"amount": 1
+	},
+	{
+		"word": "vc0",
+		"amount": 1
+	},
+	{
+		"word": "wagwan",
+		"amount": 1
+	},
+	{
+		"word": "bitches.",
+		"amount": 1
+	},
+	{
+		"word": "hope",
+		"amount": 1
+	},
+	{
+		"word": "youre",
+		"amount": 1
+	},
+	{
+		"word": "HIET",
+		"amount": 1
+	},
+	{
+		"word": "KEYBOARD",
+		"amount": 1
+	},
+	{
+		"word": "pass:",
+		"amount": 1
+	},
+	{
+		"word": "https://discord.gg/cqrtAz",
+		"amount": 1
+	},
+	{
+		"word": "id:",
+		"amount": 1
+	},
+	{
+		"word": "ccol",
+		"amount": 1
+	},
+	{
+		"word": "ranked",
+		"amount": 1
+	},
+	{
+		"word": "_troll",
+		"amount": 1
+	},
+	{
+		"word": "Also",
+		"amount": 1
+	},
+	{
+		"word": "<@!404538262288334848>",
+		"amount": 1
+	},
+	{
+		"word": "maik",
+		"amount": 1
+	},
+	{
+		"word": "engineer",
+		"amount": 1
+	},
+	{
+		"word": "Semi-Historical",
+		"amount": 1
+	},
+	{
+		"word": "Historische",
+		"amount": 1
+	},
+	{
+		"word": "Stadtentwicklung",
+		"amount": 1
+	},
+	{
+		"word": "und",
+		"amount": 1
+	},
+	{
+		"word": "Your",
+		"amount": 1
+	},
+	{
+		"word": "wth",
+		"amount": 1
+	},
+	{
+		"word": "habt",
+		"amount": 1
+	},
+	{
+		"word": "idk",
+		"amount": 1
+	},
+	{
+		"word": "musst",
+		"amount": 1
+	},
+	{
+		"word": "loan",
+		"amount": 1
+	},
+	{
+		"word": "bugbear",
+		"amount": 1
+	},
+	{
+		"word": "bist",
+		"amount": 1
+	},
+	{
+		"word": "nämlich",
+		"amount": 1
+	},
+	{
+		"word": "genau",
+		"amount": 1
+	},
+	{
+		"word": "Sure",
+		"amount": 1
+	},
+	{
+		"word": "Turks\n3.",
+		"amount": 1
+	},
+	{
+		"word": "warum",
+		"amount": 1
+	},
+	{
+		"word": "passiert",
+		"amount": 1
+	},
+	{
+		"word": "nyan",
+		"amount": 1
+	},
+	{
+		"word": "guys",
+		"amount": 1
+	},
+	{
+		"word": "Maik,",
+		"amount": 1
+	},
+	{
+		"word": "lass",
+		"amount": 1
+	},
+	{
+		"word": "Paladins",
+		"amount": 1
+	},
+	{
+		"word": "schon",
+		"amount": 1
+	},
+	{
+		"word": "mal",
+		"amount": 1
+	},
+	{
+		"word": "Downloaden",
+		"amount": 1
+	},
+	{
+		"word": "<@553979721147351051>",
+		"amount": 1
+	},
+	{
+		"word": "vv=gamble",
+		"amount": 1
+	},
+	{
+		"word": "Gentleman",
+		"amount": 1
+	},
+	{
+		"word": "sherishish",
+		"amount": 1
+	},
+	{
+		"word": "don't",
+		"amount": 1
+	},
+	{
+		"word": "gamblin",
+		"amount": 1
+	},
+	{
+		"word": "know",
+		"amount": 1
+	},
+	{
+		"word": "game#",
+		"amount": 1
+	},
+	{
+		"word": "komm",
+		"amount": 1
+	},
+	{
+		"word": "waht",
+		"amount": 1
+	},
+	{
+		"word": "e",
+		"amount": 1
+	},
+	{
+		"word": "stellt",
+		"amount": 1
+	},
+	{
+		"word": "euch",
+		"amount": 1
+	},
+	{
+		"word": "Jon",
+		"amount": 1
+	},
+	{
+		"word": "Stop",
+		"amount": 1
+	},
+	{
+		"word": "so?",
+		"amount": 1
+	},
+	{
+		"word": "NO",
+		"amount": 1
+	},
+	{
+		"word": "Always",
+		"amount": 1
+	},
+	{
+		"word": "<#627631404687294529>",
+		"amount": 1
+	},
+	{
+		"word": "nais",
+		"amount": 1
+	},
+	{
+		"word": "no...",
+		"amount": 1
+	},
+	{
+		"word": "check",
+		"amount": 1
+	},
+	{
+		"word": "wordstat",
+		"amount": 1
+	},
+	{
+		"word": "https://preview.redd.it/59eyiqh0jzp41.gif?width=640&format=mp4&s=be77e396672cb9bdb77844bb7295e7f60737fd16",
+		"amount": 1
+	},
+	{
+		"word": "90133923252106243",
+		"amount": 1
+	},
+	{
+		"word": "clidus",
 		"amount": 1
 	}
 ]

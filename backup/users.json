@@ -14,7 +14,7 @@
 	},
 	{
 		"id": "428246697546612747",
-		"bits": 53,
+		"bits": 81,
 		"trolls": [
 			"lmao",
 			"jeff",
@@ -30,36 +30,7 @@
 			"animalcrossing",
 			"wow",
 			"nice",
-			"nonono",
-			"sandstorm",
-			"rickroll",
-			"erika",
-			"tobecontinued",
-			"bruh",
-			"oof",
-			"slowoof",
-			"nani",
-			"pcspielen",
-			"jaaa",
-			"okboomer",
-			"disconnect",
-			"90s",
-			"revenge",
-			"directed",
-			"yeet",
-			"sike",
-			"kahoot",
-			"bruhbruh",
-			"running",
-			"nope",
-			"fuckedup",
-			"thicc",
-			"brb",
-			"fast",
-			"racist",
-			"door",
-			"joinspam",
-			"notify"
+			"nonono"
 		]
 	},
 	{
@@ -81,11 +52,10 @@
 	},
 	{
 		"id": "334810661836292097",
-		"bits": 9,
+		"bits": -8,
 		"trolls": [
 			"lmao",
-			"egal",
-			"nice"
+			"egal"
 		]
 	}
 ]

@@ -6,6 +6,8 @@ const Discord = require("discord.js")
 var memes = JSON.parse(fs.readFileSync("./data/memes.json", "utf8"));
 var db = JSON.parse(fs.readFileSync("./data/users.json", "utf8"));
 
+var trollRunning = false;
+
 module.exports = {
   name: "troll",
   description: "Trolling with memes meme",
@@ -23,6 +25,15 @@ module.exports = {
       return;
     }
 
+    if(trollRunning)
+    {
+      embed.setTitle("⌛ Please wait until the previous instance is done running");
+      msg.channel.send(embed);
+      return;
+    }
+
+    trollRunning = true;
+
     if(!db.find(user => user.id === msg.author.id))
     {
       var user = {id: msg.author.id, bits: 10, trolls: ["lmao"]}
@@ -32,6 +43,7 @@ module.exports = {
     if(args[1] === "stop")
     {
       if(msg.member.voice.channel) msg.member.voice.channel.leave();
+      trollRunning = false;
       return;
     }
     else if(args[1] === "list")
@@ -58,6 +70,7 @@ module.exports = {
       embed.addField("Notes", "Indicators show which ones " + msg.author.username + " owns");
 
       msg.channel.send(embed);
+      trollRunning = false;
       return;
     }
     else if(args[1] === "rand")
@@ -82,6 +95,7 @@ module.exports = {
     {
       embed.setTitle("❌ Meme not found");
       msg.channel.send(embed);
+      trollRunning = false;
       return;
     }
 
@@ -89,6 +103,7 @@ module.exports = {
     {
       embed.setTitle("❌ You don't have " + args[1] + " unlocked yet");
       msg.channel.send(embed);
+      trollRunning = false;
       return;
     }
 
@@ -112,5 +127,9 @@ module.exports = {
       embed.setTitle("❌ " + user.user.username + " has to be in Voice Channel")
       msg.channel.send(embed);
     }
+
+    setTimeout(() => {
+      trollRunning = false;
+    }, 30000);
   }
 }

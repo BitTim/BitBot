@@ -105,8 +105,6 @@ dist
 
 # nohup
 nohup.out
-backup/wordstat.json
-data/users.json
 
 # Bot Token
 token.txt

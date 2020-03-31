@@ -1,6 +1,8 @@
 const fs = require("fs");
 const Discord = require("discord.js");
 
+var db = JSON.parse(fs.readFileSync("./data/users.json", "utf8"));
+
 //================================
 // INIT
 //================================
@@ -92,3 +94,8 @@ bot.on("message", (msg) => {
 
 console.log("Logging in");
 bot.login(token);
+
+setInterval(() => {
+	db = JSON.parse(fs.readFileSync("./data/users.json", "utf8"));
+	fs.writeFileSync("./backup/users.json", "utf8");
+}, 3600000);

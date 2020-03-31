@@ -86,7 +86,7 @@ module.exports = {
       loan = true;
     }
 
-    if(db.find(user => user.id === msg.author.id).bits < -1000000000)
+    if(db.find(user => user.id === msg.author.id).bits - selCase.price < -1000000000)
     {
       embed.setTitle("🔴 You have used to much of your loan, get funds from other users");
       msg.channel.send(embed);
@@ -116,56 +116,54 @@ module.exports = {
       totalProb += selCase.outcomes[i].probability;
     }
 
-    var counter = 0;
-    var interval = setInterval(async () => {
-      embed.fields[0].value += ".";
-      await sent.edit(embed)
+    embed.fields[0].value += ".";
+    await sent.edit(embed)
 
-      if(++counter >= 3)
-      {
-        clearInterval(interval);
+    embed.fields[0].value += ".";
+    await sent.edit(embed)
 
-        if(outcome.name.includes("---bit"))
+    embed.fields[0].value += ".";
+    await sent.edit(embed)
+
+    if(outcome.name.includes("---bit"))
+    {
+      var amount = Number(outcome.name.split("-")[0])
+
+      embed.fields[0] = {name: "Outcome", value: "💰 You won " + amount + " Bits!", inline: true};
+      embed.fields[2].value += "\n" + db.find(user => user.id === msg.author.id).bits + " Bits > " + (db.find(user => user.id === msg.author.id).bits + amount) + " Bits";
+      db.find(user => user.id === msg.author.id).bits += amount;
+    }
+    else
+    {
+      embed.fields[0] = {name: "Outcome", value: "💎 You won \"" + outcome.name + "\"!", inline: true};
+      if(db.find(user => user.id === msg.author.id).trolls.includes(outcome.name) || loan)
+      {            
+        var itemFound = false;
+        var item;
+
+        for(var category of memes)
         {
-          var amount = Number(outcome.name.split("-")[0])
-
-          embed.fields[0] = {name: "Outcome", value: "💰 You won " + amount + " Bits!", inline: true};
-          embed.fields[2].value += "\n" + db.find(user => user.id === msg.author.id).bits + " Bits > " + (db.find(user => user.id === msg.author.id).bits + amount) + " Bits";
-          db.find(user => user.id === msg.author.id).bits += amount;
-        }
-        else
-        {
-          embed.fields[0] = {name: "Outcome", value: "💎 You won \"" + outcome.name + "\"!", inline: true};
-          if(db.find(user => user.id === msg.author.id).trolls.includes(outcome.name) || loan)
-          {            
-            var itemFound = false;
-            var item;
-
-            for(var category of memes)
-            {
-              if(item = category.items.find(meme => meme.name === outcome.name))
-              {
-                itemFound = true;
-                break;
-              }
-              if(itemFound) break;
-            }
-
-            if(!loan) embed.addField("Notes", "You already own this item. You will get it's value (" + item.price + ") in Bits instead");
-            else embed.addField("Notes", "You have a loan, so you can only get bit amounts (" + item.price + ")")
-            embed.fields[2].value += "\n" + db.find(user => user.id === msg.author.id).bits + " Bits > " + (db.find(user => user.id === msg.author.id).bits + item.price) + " Bits";
-            db.find(user => user.id === msg.author.id).bits += item.price;
-          }
-          else
+          if(item = category.items.find(meme => meme.name === outcome.name))
           {
-            db.find(user => user.id === msg.author.id).trolls.push(outcome.name);
+            itemFound = true;
+            break;
           }
+          if(itemFound) break;
         }
 
-        await sent.edit(embed);
-        fs.writeFile("./data/users.json", JSON.stringify(db, null, "\t"), (err) => { if(err) throw err; });
-        doneOpen = true;
+        if(!loan) embed.addField("Notes", "You already own this item. You will get it's value (" + item.price + ") in Bits instead");
+        else embed.addField("Notes", "You have a loan, so you can only get bit amounts (" + item.price + ")")
+        embed.fields[2].value += "\n" + db.find(user => user.id === msg.author.id).bits + " Bits > " + (db.find(user => user.id === msg.author.id).bits + item.price) + " Bits";
+        db.find(user => user.id === msg.author.id).bits += item.price;
       }
-    }, 1000);
+      else
+      {
+        db.find(user => user.id === msg.author.id).trolls.push(outcome.name);
+      }
+    }
+
+    await sent.edit(embed);
+    fs.writeFile("./data/users.json", JSON.stringify(db, null, "\t"), (err) => { if(err) throw err; });
+    doneOpen = true;
   }
 }

@@ -24,7 +24,8 @@
       {"name": "bruhbruh", "price": 20, "url": "https://www.youtube.com/watch?v=Jgv7qhDLPhg"},
       {"name": "faces", "price": 30, "url": "https://www.youtube.com/watch?v=4N3N1MlvVc4"},
       {"name": "directed", "price": 25, "url": "https://www.youtube.com/watch?v=X-KwYX2u8e4"},
-      {"name": "nyan", "price": 15, "url": "https://www.youtube.com/watch?v=QH2-TGUlwu4"}
+      {"name": "nyan", "price": 15, "url": "https://www.youtube.com/watch?v=QH2-TGUlwu4"},
+      {"name": "okboomer", "price": 35, "url": "https://www.youtube.com/watch?v=SN3z7e7Mjio"}
     ]
   },
   {
@@ -49,7 +50,8 @@
       {"name": "jeff", "price": 0, "url": "https://www.youtube.com/watch?v=AfIOBLr1NDU"},
       {"name": "nonono", "price": 40, "url": "https://www.youtube.com/watch?v=KyPbLqK1un4"},
       {"name": "nice", "price": 15, "url": "https://www.youtube.com/watch?v=-mMhKYJFOnQ"},
-      {"name": "racist", "price": 7, "url": "https://www.youtube.com/watch?v=0yNIvxeuP34"}
+      {"name": "racist", "price": 7, "url": "https://www.youtube.com/watch?v=0yNIvxeuP34"},
+      {"name": "animalcrossing", "price": 20, "url": "https://www.youtube.com/watch?v=YekLRkiIW4Y"}
     ]
   },
   {
