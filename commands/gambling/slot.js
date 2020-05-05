@@ -35,16 +35,26 @@ module.exports = {
       `, true);
       embed.addField("Payout", `
       Bet x10 Bits
-      Bet x1.25 Bits
-      2 Bits
-      1 Bit
+      Bet x2 Bits
+      Bet x0.75 Bits
+      Bet x0.25 Bits
       `, true);
       msg.channel.send(embed);
       slotDone = true;
       return;
     }
 
-    if(Number(args[2]) === 0)
+    if(isNaN(args[2]))
+    {
+      embed.setTitle("❌ You have to enter a number for your bet");
+      msg.channel.send(embed);
+      slotDone = true;
+      return;
+    }
+
+    args[2] = Math.ceil(args[2]);
+
+    if(Number(args[2]) < 1)
     {
       embed.setTitle("❌ You cannot bet less than 1 Bit");
       msg.channel.send(embed);
@@ -52,27 +62,9 @@ module.exports = {
       return;
     }
 
-    if(Number(args[2]) > 1000)
+    if(Number(args[2]) > 50)
     {
-      embed.setTitle("❌ You cannot bet more than 1000 Bits");
-      msg.channel.send(embed);
-      slotDone = true;
-      return;
-    }
-
-    if(Number(args[2]) > 10 && db.find(user => user.id === msg.author.id).bits < 0)
-    {
-      embed.setTitle("❌ You cannot bet more than 10 Bits when you are on a loan");
-      msg.channel.send(embed);
-      slotDone = true;
-      return;
-    }
-
-    var bet = Number(args[2]);
-
-    if(db.find(user => user.id === msg.author.id).bits < bet && db.find(user => user.id === msg.author.id).bits >= 0 )
-    {
-      embed.setTitle("❌ Insufficient funds");
+      embed.setTitle("❌ You cannot bet more than 50 Bits");
       msg.channel.send(embed);
       slotDone = true;
       return;
@@ -84,12 +76,22 @@ module.exports = {
       msg.channel.send(embed);
     }
 
-    if(db.find(user => user.id === msg.author.id).bits - bet < -1000000000)
+    if(db.find(user => user.id === msg.author.id).bits < -1000000000)
     {
       embed.setTitle("🔴 You have used to much of your loan, get funds from other users");
       msg.channel.send(embed);
       slotDone = true;
       return
+    }
+
+    var bet = Number(args[2]);
+
+    if((db.find(user => user.id === msg.author.id).bits >= 0 && db.find(user => user.id === msg.author.id).bits < bet) || db.find(user => user.id === msg.author.id).bits - bet < -1000000000)
+    {
+      embed.setTitle("❌ Insufficient funds");
+      msg.channel.send(embed);
+      slotDone = true;
+      return;
     }
 
     var bal = db.find(user => user.id === msg.author.id).bits;
@@ -121,6 +123,7 @@ module.exports = {
     embed.fields[0] = {name: "Reel", value: reelSymbols[pos_bef[0]] + reelSymbols[pos_bef[1]] + reelSymbols[pos_bef[2]] + "\n" + reelSymbols[pos[0]] + reelSymbols[pos[1]] + reelSymbols[pos[2]] + "< \n" + reelSymbols[pos_aft[0]] + reelSymbols[pos_aft[1]] + reelSymbols[pos_aft[2]] + "\n", inline: true};
     await spin.edit(embed)
 
+    var initialBet = bet;
     pos = pos.sort();
     if(pos[0] === pos[1] && pos[1] === pos[2])
     {
@@ -129,7 +132,7 @@ module.exports = {
     }
     else if(pos[0] === pos[1] || pos[1] === pos[2])
     {
-      bet = Math.floor(bet * 1.25);
+      bet = Math.floor(bet * 2);
       embed.fields[2] = {name: "Payout", value: "🎰 Spin: " + bet + " Bits"};
     }
     else
@@ -142,15 +145,15 @@ module.exports = {
 
     if(pos.includes(0))
     {
-      bet += 1
-      var val = embed.fields[3].value += "Germany Bonus: 1 Bits\n";
+      bet += Math.round(initialBet * 0.25);
+      var val = embed.fields[3].value += "Germany Bonus: 25% of the Bet\n";
       embed.fields[3] = {name: "Bonuses", value: val, inline: true}
     }
 
     if(pos.includes(4))
     {
-      bet += 2;
-      var val = embed.fields[3].value += "Diamond Bonus: 2 Bits\n";
+      bet += Math.round(initialBet * 0.75);
+      var val = embed.fields[3].value += "Diamond Bonus: 75% of the Bet\n";
       embed.fields[3] = {name: "Bonuses", value: val, inline: true}
     }
 

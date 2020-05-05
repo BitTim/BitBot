@@ -1,8 +1,8 @@
 const Discord = require("discord.js")
 
 module.exports = {
-  name: "list",
-  description: "Lists all available games",
+  name: "timeout",
+  description: "Timeouts Admins/Mods",
   exec(msg, args)
   {
     const embed = new Discord.MessageEmbed().setColor("#CE3142")

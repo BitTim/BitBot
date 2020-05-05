@@ -15,6 +15,10 @@ module.exports = {
     wordstat
     wordstat <Amount>
 
+    role list
+    role join <Role>
+    role leave <Role>
+
     troll <Meme>
     troll <Meme> <User>
     troll list
@@ -33,6 +37,7 @@ module.exports = {
     gamble slot <Bet>
     gamble slot paytable
     gamble case list
+    gamble blackjack <Bet>
 
     shop list
     shop buy <Item>
@@ -43,6 +48,10 @@ module.exports = {
 
     Shows top 10 most used words
     Shows top <Amount> most used words
+
+    Lists all available roles
+    Adds you to the <Role> role
+    Removes you from the <Role> role
 
     Plays <Meme> in current Voice Channel
     Plays <Meme> in Voice Channel <User> is in
@@ -62,6 +71,7 @@ module.exports = {
     Playing "slot" with a bet of <Bet> Bits
     Displays the paytable for the slot machine
     Lists all available Cases
+    Playing "blackjack" with a bet of <Bet> Bits
 
     Lists all purchasable items
     Purchases a specified Item

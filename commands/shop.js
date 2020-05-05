@@ -9,6 +9,7 @@ module.exports = {
   description: "Shop for memes",
   exec(msg, args)
   {
+    memes = JSON.parse(fs.readFileSync("./data/memes.json", "utf8"));
     db = JSON.parse(fs.readFileSync("./data/users.json", "utf8"));
     
     if(args < 2)
@@ -19,7 +20,7 @@ module.exports = {
 
     if(!db.find(user => user.id === msg.author.id))
     {
-      var user = {id: msg.author.id, bits: 10, trolls: ["lmao"]}
+      var user = {id: msg.author.id, bits: 10, strikes: 0, prison: 0, isInPrison: false, roles: ["member"], trolls: ["lmao"]}
       db.push(user);
     }
 
@@ -34,8 +35,9 @@ module.exports = {
         var embedString = "";
         for(var item of category.items)
         {
-          if(item.price != 0) embedString += "<" + item.price + " Bits> " + item.name + "\n";
-          else embedString += "<FREE> " + item.name + "\n";
+          if(item.price > 0) embedString += "<" + item.price + " Bits> " + item.name + "\n";
+          else if(item.price === 0) embedString += "<FREE> " + item.name + "\n";
+          else embedString += "<EXCLUSIVE> " + item.name + "\n";
         }
 
         embed.addField(category.name, embedString, true);
@@ -78,6 +80,36 @@ module.exports = {
           return;
         }
       }
+      else if(args[2] === "all")
+      {
+        embed.setTitle("🛒 Purchasing as much as you can afford");
+        for(var category of memes)
+        {
+          var embedString = ""
+          for(var item of category.items)
+          {
+            if(db.find(user => user.id === msg.author.id).trolls.includes(item.name))
+            {
+              embedString += "❌ You already own " + item.name + "\n";
+            }
+            else if(db.find(user => user.id === msg.author.id).bits < item.price)
+            {
+              embedString += "❌ Insufficient funds for " + item.name + "\n";
+            }
+            else
+            {
+              db.find(user => user.id === msg.author.id).trolls.push(item.name);
+              db.find(user => user.id === msg.author.id).bits -= item.price;
+              embedString += "✅ " + item.name + " for " + item.price + " Bits\n";
+            }
+          }
+
+          embed.addField(category.name, embedString, true);
+        }
+        msg.channel.send(embed);
+        fs.writeFile("./data/users.json", JSON.stringify(db, null, "\t"), (err) => { if(err) throw err; });
+        return;
+      }
 
       var itemFound = false;
       var item;
@@ -111,11 +143,25 @@ module.exports = {
         return;
       }
 
+      if(item.price < 0)
+      {
+        embed.setTitle("❌ You cannot buy an exclusive meme");
+        msg.channel.send(embed);
+        return;
+      }
+
       db.find(user => user.id === msg.author.id).trolls.push(item.name);
       db.find(user => user.id === msg.author.id).bits -= item.price;
-      embed.setTitle("🛒 Successfully purchased " + item.name + " for " + item.price + " Bits!")
+      embed.setTitle("🛒 Successfully purchased " + item.name + " for " + item.price + " Bits!");
 
       fs.writeFile("./data/users.json", JSON.stringify(db, null, "\t"), (err) => { if(err) throw err; });
+    }
+    else
+    {
+      embed.setTitle("❌ Invalid operation");
+      msg.channel.send(embed);
+      fs.writeFile("./data/users.json", JSON.stringify(db, null, "\t"), (err) => { if(err) throw err; });
+      return;
     }
 
     msg.channel.send(embed);

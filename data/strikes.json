@@ -1,0 +1,52 @@
+[
+  {
+    "name": "spamming",
+    "desc": "User is spamming",
+    "penalty": 1
+  },
+  {
+    "name": "threatening",
+    "desc": "User is threatening someone",
+    "penalty": 3
+  },
+  {
+    "name": "badLanguage",
+    "desc": "User is using bad language",
+    "penalty": 2
+  },
+  {
+    "name": "botExploitation",
+    "desc": "User is exploiting the BitBot without reporting bugs",
+    "penalty": 3
+  },
+  {
+    "name": "powerAbusement",
+    "desc": "User is abusing their rights as a higher position",
+    "penalty": 3
+  },
+  {
+    "name": "strikeAbusement",
+    "desc": "User is abusing the striking system",
+    "penalty": 6
+  },
+  {
+    "name": "noCompliance",
+    "desc": "User is not complying with orders / strikes",
+    "penalty": 4
+  },
+  {
+    "name": "excessiveEarrape",
+    "desc": "User is earraping excvessively",
+    "penalty": 3
+  },
+  {
+    "name": "bypassingTrollSystem",
+    "desc": "User bypasses the Troll system with the music cmd",
+    "penalty": 4
+  },
+  {
+    "name": "usingWrongChannel",
+    "desc": "User is using wrong channel for commands or similar",
+    "penalty": 1
+  }
+]

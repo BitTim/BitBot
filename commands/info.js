@@ -1,4 +1,4 @@
-const VERSION = "1.1.8";
+const VERSION = "1.3.5";
 const dateStarted = new Date();
 
 const Discord = require("discord.js");

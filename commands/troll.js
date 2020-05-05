@@ -13,6 +13,7 @@ module.exports = {
   description: "Trolling with memes meme",
   exec(msg, args)
   {
+    memes = JSON.parse(fs.readFileSync("./data/memes.json", "utf8"));
     db = JSON.parse(fs.readFileSync("./data/users.json", "utf8"));
     
     var embed = new Discord.MessageEmbed()
@@ -25,7 +26,7 @@ module.exports = {
       return;
     }
 
-    if(trollRunning)
+    if(trollRunning && args[1] != "list")
     {
       embed.setTitle("⌛ Please wait until the previous instance is done running");
       msg.channel.send(embed);
@@ -36,7 +37,7 @@ module.exports = {
 
     if(!db.find(user => user.id === msg.author.id))
     {
-      var user = {id: msg.author.id, bits: 10, trolls: ["lmao"]}
+      var user = {id: msg.author.id, bits: 10, strikes: 0, prison: 0, isInPrison: false, roles: ["member"], trolls: ["lmao"]}
       db.push(user);
     }
 
@@ -50,12 +51,15 @@ module.exports = {
     {
       embed.setTitle("😂 Troll meme list");
 
+      var member = msg.member;
+      if(args.length > 2) member = msg.mentions.members.first();
+
       for(var category of memes)
       {
         var embedString = "";
         for(var item of category.items)
         {
-          if(db.find(user => user.id === msg.author.id).trolls.includes(item.name))
+          if(db.find(user => user.id === member.id).trolls.includes(item.name))
           {
             embedString += "✅ ";
           }
@@ -67,7 +71,7 @@ module.exports = {
         embed.addField(category.name, embedString, true);
       }
 
-      embed.addField("Notes", "Indicators show which ones " + msg.author.username + " owns");
+      embed.addField("Notes", "Indicators show which ones " + member.user.username + " owns");
 
       msg.channel.send(embed);
       trollRunning = false;
@@ -110,6 +114,14 @@ module.exports = {
     var user = msg.member;
     if(args.length > 2) user = msg.mentions.members.first();
 
+    if(!user)
+    {
+      embed.setTitle("❌ You have to mention the User to troll");
+      msg.channel.send(embed);
+      trollRunning = false;
+      return;
+    }
+
     var voiceChannel = user.voice.channel;
     if(voiceChannel)
     {
@@ -119,6 +131,7 @@ module.exports = {
         dispatcher.setVolume(0.5);
         dispatcher.on("finish", end => {
           voiceChannel.leave();
+	  trollRunning = false;
         });
       }).catch(err => console.log(err));
     }
@@ -126,10 +139,11 @@ module.exports = {
     {
       embed.setTitle("❌ " + user.user.username + " has to be in Voice Channel")
       msg.channel.send(embed);
+      trollRunning = false;
     }
 
     setTimeout(() => {
       trollRunning = false;
-    }, 30000);
+    }, 20000);
   }
 }

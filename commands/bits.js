@@ -23,7 +23,7 @@ module.exports = {
         embed.setTitle("💸 " + msg.guild.members.cache.get(id).user.username + "'s Balance is: " + db.find(user => user.id === id).bits + " Bits")
       else
       {
-        var user = {id: id, bits: 10, trolls: ["lmao"]}
+        var user = {id: id, bits: 10, strikes: 0, prison: 0, isInPrison: false, roles: ["member"], trolls: ["lmao"]}
         db.push(user);
         embed.setTitle("💸 Your Balance is: " + db.find(user => user.id === id).bits + " Bits")
       
@@ -106,7 +106,7 @@ module.exports = {
 
       if(!db.find(user => user.id === msg.author.id))
       {
-        var user = {id: msg.author.id, bits: 10, trolls: ["lmao"]}
+        var user = {id: msg.author.id, bits: 10, strikes: 0, prison: 0, isInPrison: false, roles: ["member"], trolls: ["lmao"]}
         db.push(user);
         fs.writeFile("./data/users.json", JSON.stringify(db, null, "\t"), (err) => { if(err) throw err; });
       }

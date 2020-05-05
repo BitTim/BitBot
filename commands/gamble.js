@@ -21,6 +21,15 @@ module.exports = {
     db = JSON.parse(fs.readFileSync("./data/users.json", "utf8"));
     var embed = new Discord.MessageEmbed().setColor("#CE3142")
 
+    if(msg.member.guild.id != "694503221804138596")
+    {
+      embed.setTitle("⚠ This is a feature exclusive to Bit Inc!");
+      embed.setDescription("You can join Bit Inc with the link above")
+      embed.setURL("https://discord.gg/M5tysbt");
+      msg.channel.send(embed);
+      return;
+    }
+
     if(args.length < 2)
     {
       embed.setTitle("❌ You have to specify a game to play");
@@ -30,7 +39,7 @@ module.exports = {
 
     if(!db.find(user => user.id === msg.author.id))
     {
-      var user = {id: msg.author.id, bits: 10, trolls: ["lmao"]}
+      var user = {id: msg.author.id, bits: 10, strikes: 0, prison: 0, isInPrison: false, roles: ["member"], trolls: ["lmao"]}
       db.push(user);
     }
     

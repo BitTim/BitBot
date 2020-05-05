@@ -2,6 +2,7 @@ const fs = require("fs");
 const Discord = require("discord.js");
 
 var db = JSON.parse(fs.readFileSync("./data/users.json", "utf8"));
+const bitGroupID = "694503221804138596";
 
 //================================
 // INIT
@@ -51,13 +52,18 @@ bot.on("message", (msg) => {
 	console.log("Received: " + msg.content);
 	let data = msg.content.split(" ");
 
+	for(var i = 0; i < data.length; i++) if(data[i] == "") data.splice(i--, 1); 
+	console.log(data);
+
+	if(!data[0]) return;
+
 	if(data[0].substr(0, 1) === PREFIX)
 	{
 		data[0] = data[0].substr(1);
-		if(bot.commands.get(data[0]) != undefined)
+		if(bot.commands.get(data[0].toLowerCase()) != undefined)
 		{
-			console.log("Found command " + data[0]);
-			bot.commands.get(data[0]).exec(msg, data)
+			console.log("Found command " + data[0].toLowerCase());
+			bot.commands.get(data[0].toLowerCase()).exec(msg, data)
 		}
 		else if(data[0] != "")
 		{
@@ -87,9 +93,21 @@ bot.on("message", (msg) => {
 				}
 			}
 		}
+		else if(msg.content.toLowerCase().includes("kill myself"))
+		{
+			msg.reply("🔫 Here you go!")
+		}
 
 		bot.commands.get("wordstat").update(msg);
 	}
+})
+
+bot.on('guildMemberAdd' , member => {
+	if(!member.guild.id == bitGroupID) return;
+
+	console.log(member.user.username + " joined Bit Group")
+	var role = member.guild.roles.cache.find(r => r.name === "Member");
+	member.roles.add(role)
 })
 
 console.log("Logging in");
@@ -97,5 +115,5 @@ bot.login(token);
 
 setInterval(() => {
 	db = JSON.parse(fs.readFileSync("./data/users.json", "utf8"));
-	fs.writeFileSync("./backup/users.json", "utf8");
-}, 3600000);
+	fs.writeFileSync("./backup/users.json", JSON.stringify(db, null, "\t"));
+}, 1800000);

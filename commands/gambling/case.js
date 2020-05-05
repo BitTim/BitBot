@@ -12,6 +12,7 @@ module.exports = {
   description: "A CS:GO like case opening game",
   async exec(msg, args)
   {
+    memes = JSON.parse(fs.readFileSync("./data/memes.json", "utf8"));
     db = JSON.parse(fs.readFileSync("./data/users.json", "utf8"));
     var embed = new Discord.MessageEmbed().setColor("#CE3142")
 
@@ -86,7 +87,7 @@ module.exports = {
       loan = true;
     }
 
-    if(db.find(user => user.id === msg.author.id).bits - selCase.price < -1000000000)
+    if(db.find(user => user.id === msg.author.id).bits < -1000000000)
     {
       embed.setTitle("🔴 You have used to much of your loan, get funds from other users");
       msg.channel.send(embed);
@@ -151,10 +152,10 @@ module.exports = {
           if(itemFound) break;
         }
 
-        if(!loan) embed.addField("Notes", "You already own this item. You will get it's value (" + item.price + ") in Bits instead");
-        else embed.addField("Notes", "You have a loan, so you can only get bit amounts (" + item.price + ")")
-        embed.fields[2].value += "\n" + db.find(user => user.id === msg.author.id).bits + " Bits > " + (db.find(user => user.id === msg.author.id).bits + item.price) + " Bits";
-        db.find(user => user.id === msg.author.id).bits += item.price;
+        if(!loan) embed.addField("Notes", "You already own this item. You will get half of it's value (" + Math.ceil(item.price / 2) + ") in Bits instead");
+        else embed.addField("Notes", "You have a loan, so you can only get the bit amounts (" + Math.ceil(item.price / 2) + ")")
+        embed.fields[2].value += "\n" + db.find(user => user.id === msg.author.id).bits + " Bits > " + (db.find(user => user.id === msg.author.id).bits + Math.ceil(item.price / 2)) + " Bits";
+        db.find(user => user.id === msg.author.id).bits += Math.ceil(item.price / 2);
       }
       else
       {

@@ -1,0 +1,57 @@
+[
+  {
+    "name": "overwatch",
+    "id": "696375923985088582",
+    "joinable": true
+  },
+  {
+    "name": "cs:go",
+    "id": "696376001084784760",
+    "joinable": true
+  },
+  {
+    "name": "league",
+    "id": "696376048291676200",
+    "joinable": true
+  },
+  {
+    "name": "valorant",
+    "id": "697456903676100688",
+    "joinable": true
+  },
+  {
+    "name": "member",
+    "id": "694504209286037544",
+    "joinable": false
+  },
+  {
+    "name": "owner",
+    "id": "694503354537213952",
+    "joinable": false
+  },
+  {
+    "name": "admin",
+    "id": "694503404088721419",
+    "joinable": false
+  },
+  {
+    "name": "moderator",
+    "id": "694503467741610010",
+    "joinable": false
+  },
+  {
+    "name": "friends",
+    "id": "694503834512261150",
+    "joinable": false
+  },
+  {
+    "name": "prison",
+    "id": "697753568941309952",
+    "joinable": false
+  },
+  {
+    "name": "bughunter",
+    "id": "694596782247641251",
+    "joinable": false
+  }
+]
