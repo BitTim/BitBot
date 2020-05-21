@@ -10,7 +10,8 @@
       {"name": "pcspielen", "price": 50, "url": "https://www.youtube.com/watch?v=Cy4mztkndHk"},
       {"name": "wow2", "price": 5, "url": "https://www.youtube.com/watch?v=twqmITFCOJU"},
       {"name": "erdbeermarmelade", "price": 15, "url": "https://www.youtube.com/watch?v=gQDSlDmFcJQ"},
-      {"name": "kuh", "price": "20", "url": "https://www.youtube.com/watch?v=Ok1CEMHbyks"}
+      {"name": "kuh", "price": "20", "url": "https://www.youtube.com/watch?v=Ok1CEMHbyks"},
+      {"name": "nein2", "price": 20, "url": "https://www.youtube.com/watch?v=oA3-kqNHr_Y"}
     ]
   },
   {
@@ -69,7 +70,8 @@
       {"name": "aww", "price": 30, "url": "https://www.youtube.com/watch?v=ltjT25GyXTM"},
       {"name": "wasted", "price": 20, "url": "https://www.youtube.com/watch?v=K3kFQHKE0LA"},
       {"name": "price", "price": 15, "url": "https://www.youtube.com/watch?v=_asNhzXq72w"},
-      {"name": "doit", "price": 20, "url": "https://www.youtube.com/watch?v=jsAXw6Qy21I"}
+      {"name": "doit", "price": 20, "url": "https://www.youtube.com/watch?v=jsAXw6Qy21I"},
+      {"name": "profanity", "price": 20, "url": "https://www.youtube.com/watch?v=hpigjnKI7nl"}
     ]
   },
   {
@@ -88,7 +90,10 @@
       {"name": "eae", "price": 15, "url": "https://www.youtube.com/watch?v=fzhttXnNzdE"},
       {"name": "egay", "price": 20, "url": "https://www.youtube.com/watch?v=GKjcWiauzJY"},
       {"name": "easports", "price": 10, "url": "https://www.youtube.com/watch?v=SgGK93iiQ6E"},
-      {"name": "wisdom", "price": 15, "url": "https://www.youtube.com/watch?list=RDbE4C8a48o1E"}
+      {"name": "wisdom", "price": 15, "url": "https://www.youtube.com/watch?list=RDbE4C8a48o1E"},
+      {"name": "shutt", "price": 35, "url": "https://www.youtube.com/watch?v=_nzBKUJIcAE"},
+      {"name": "succ", "price": 25, "url": "https://www.youtube.com/watch?v=fPNdWnwuBDI"},
+      {"name": "bass", "price": 40, "url": "https://www.youtube.com/watch?v=O5WKd_d9luw"}
     ]
   },
   {

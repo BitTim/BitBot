@@ -4,7 +4,7 @@
 		"bits": 407,
 		"strikes": 9,
 		"prison": 2,
-		"isInPrison": true,
+		"isInPrison": false,
 		"roles": [
 			"friends",
 			"member",
@@ -131,7 +131,12 @@
 			"wisdom",
 			"kazoo",
 			"stop",
-			"breakdown"
+			"breakdown",
+			"shutt",
+			"bass",
+			"profanity",
+			"succ",
+			"nein2"
 		]
 	},
 	{
@@ -187,12 +192,13 @@
 			"erdbeermarmelade",
 			"hub",
 			"doit",
-			"rotate"
+			"rotate",
+			"shutt"
 		]
 	},
 	{
 		"id": "428246697546612747",
-		"bits": 280,
+		"bits": 175,
 		"strikes": 0,
 		"prison": 0,
 		"isInPrison": false,
@@ -286,12 +292,17 @@
 			"price",
 			"wisdom",
 			"hub",
-			"doit"
+			"doit",
+			"shutt",
+			"nein2",
+			"profanity",
+			"succ",
+			"bass"
 		]
 	},
 	{
 		"id": "493060768808435717",
-		"bits": 363,
+		"bits": 173,
 		"strikes": 11,
 		"prison": 2,
 		"isInPrison": false,
